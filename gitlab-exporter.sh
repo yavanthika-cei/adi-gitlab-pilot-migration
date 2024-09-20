@@ -11,7 +11,7 @@ fi
 
 # Define variables
 EXPORTER_TAR_URL="https://github.com/yavanthika-cei/adi-gitlab-pilot-migration/raw/main/gl-exporter-1.7.1.tar.gz"
-EXPORTER_TAR_FILE="gl-exporter-1.7.1.tar.gz"
+EXPORTER_TAR_FILE="gl-exporter.tar.gz"
 EXPORTER_DIR="gl-exporter-1.7.1"
 
 # Download the .tar.gz file from GitHub if it doesn't exist
@@ -30,18 +30,19 @@ else
   echo "Exporter already extracted."
 fi
 
-# Build the Docker image from the Dockerfile
+# Build Docker image
 echo "Building Docker image for gl-exporter..."
-docker build -t gl-exporter:1.7.1 "$EXPORTER_DIR"
+cd "$EXPORTER_DIR"
+docker build -t gl-exporter:1.7.1 .
 
-# Run the exporter tool in Docker
+# Run the exporter tool
 echo "Running GitLab exporter..."
 docker run --rm \
+  -e GITLAB_API_ENDPOINT="$GITLAB_API_ENDPOINT" \
+  -e GITLAB_USERNAME="$GITLAB_USERNAME" \
   -e GITLAB_TOKEN="$GITLAB_TOKEN" \
-  -e PROJECT_NAME="$PROJECT_NAME" \
-  -e NAMESPACE="$NAMESPACE" \
-  -v "$(pwd)/output:/output" \
+  -v "$PWD/output:/output" \
   gl-exporter:1.7.1 \
   ./gl-exporter --namespace "$NAMESPACE" --project "$PROJECT_NAME" -o /output/migration_archive.tar.gz
 
-echo "Export completed."
+echo "Export completed. Archive stored in ./output/migration_archive.tar.gz."
