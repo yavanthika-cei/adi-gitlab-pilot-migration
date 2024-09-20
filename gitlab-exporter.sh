@@ -25,13 +25,14 @@ docker build -t gl-exporter:1.7.1 .
 
 # Run the exporter tool
 echo "Running GitLab exporter..."
-echo "Running command: docker run ... (complete command here)"
+echo "Running command: docker run --rm -e GITLAB_API_ENDPOINT='$GITLAB_API_ENDPOINT' -e GITLAB_USERNAME='$GITLAB_USERNAME' -e GITLAB_API_PRIVATE_TOKEN='$GITLAB_API_PRIVATE_TOKEN' -e GITLAB_TOKEN='$GITLAB_TOKEN' -v '$PWD/../output:/output' -w /gl-exporter/exe gl-exporter:1.7.1 ./gl_exporter --namespace '$NAMESPACE' --project '$PROJECT_NAME' -o /output/migration_archive.tar.gz"
+
 docker run --rm \
   -e GITLAB_API_ENDPOINT="$GITLAB_API_ENDPOINT" \
   -e GITLAB_USERNAME="$GITLAB_USERNAME" \
   -e GITLAB_API_PRIVATE_TOKEN="$GITLAB_API_PRIVATE_TOKEN" \
   -e GITLAB_TOKEN="$GITLAB_TOKEN" \
-  -v "$PWD/../output:/output" \  # Ensure to go back one directory to access output
+  -v "$PWD/../output:/output" \
   -w /gl-exporter/exe \
   gl-exporter:1.7.1 \
   ./gl_exporter --namespace "$NAMESPACE" --project "$PROJECT_NAME" -o /output/migration_archive.tar.gz
