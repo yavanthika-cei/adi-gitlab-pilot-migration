@@ -44,5 +44,5 @@ jobs:
 
     - name: Run migration script
       run: |
-        chmod +x ./scripts/gitlab-exporter.sh
-        ./scripts/gitlab-exporter.sh
+        chmod +x ./gitlab-exporter.sh
+        ./gitlab-exporter.sh
