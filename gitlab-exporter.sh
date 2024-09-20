@@ -48,6 +48,7 @@ echo "Running GitLab exporter..."
 docker run --rm \
   -e GITLAB_API_ENDPOINT="$GITLAB_API_ENDPOINT" \
   -e GITLAB_USERNAME="$GITLAB_USERNAME" \
+  -e GITLAB_API_PRIVATE_TOKEN="$GITLAB_API_PRIVATE_TOKEN" \
   -e GITLAB_TOKEN="$GITLAB_TOKEN" \
   -v "$PWD/output:/output" \
   -w /gl-exporter/exe \
