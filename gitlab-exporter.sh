@@ -16,7 +16,7 @@ fi
 # ./script/bootstrap
 # gl-exporter --version
 
-Define variables
+#Define variables
 EXPORTER_TAR_URL="https://github.com/yavanthika-cei/adi-gitlab-pilot-migration/raw/main/gl-exporter-1.7.1.tar.gz"
 EXPORTER_TAR_FILE="gl-exporter.tar.gz"
 EXPORTER_DIR="gl-exporter-1.7.1"
