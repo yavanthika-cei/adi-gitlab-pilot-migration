@@ -2,24 +2,30 @@ name: Export GitLab Repos
 
 on:
   workflow_dispatch:
+  issues:
+    types: [opened]
 
 jobs:
   export:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: SetUp Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.4.1
+
+      - name: Extract project names from issue
+        if: github.event_name == 'issues'
+        run: |
+          echo "Extracting project names and namespaces from issue..."
+          echo "${{ github.event.issue.body }}" > issue_body.txt
+          # Extract comma-separated values from the issue body and convert them into CSV format
+          cat issue_body.txt | grep -oP '[^,]*,[^,]*' > export_list.csv
+          echo "Generated export_list.csv with the following contents:"
+          cat export_list.csv
+
       - name: Set up GitLab variables
         run: |
           echo "GITLAB_TOKEN=${{ secrets.GITLAB_TOKEN }}" >> $GITHUB_ENV
           echo "GITLAB_API_PRIVATE_TOKEN=${{ secrets.GITLAB_API_PRIVATE_TOKEN }}" >> $GITHUB_ENV
-          echo "PROJECT_NAME=adi-pilot-migration" >> $GITHUB_ENV
-          echo "NAMESPACE=avanthika127" >> $GITHUB_ENV
           echo "GITLAB_API_ENDPOINT=${{ secrets.GITLAB_API_ENDPOINT }}" >> $GITHUB_ENV
           echo "GITLAB_USERNAME=${{ secrets.GITLAB_USERNAME }}" >> $GITHUB_ENV
         
