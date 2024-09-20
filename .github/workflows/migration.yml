@@ -21,8 +21,11 @@ jobs:
         run: |
           echo "Extracting project names and namespaces from issue..."
           echo "${{ github.event.issue.body }}" > issue_body.txt
-          # Extract comma-separated values from the issue body and convert them into CSV format
-          cat issue_body.txt | grep -oP '[^,]*,[^,]*' > export_list.csv
+          
+          # Extract each line as namespace and project name from issue_body.txt
+          # Expecting each line to be in format: <namespace>,<project>
+          awk -F',' '{print $1 "," $2}' issue_body.txt > export_list.csv
+
           echo "Generated export_list.csv with the following contents:"
           cat export_list.csv
 
@@ -32,7 +35,6 @@ jobs:
       - name: Move CSV to output directory
         run: mv export_list.csv output/
 
-      # Add a debug step to verify that the CSV file exists in the correct path
       - name: Verify CSV creation
         run: |
           echo "Checking if CSV file exists in output/ directory:"
