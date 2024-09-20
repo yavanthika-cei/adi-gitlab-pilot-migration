@@ -25,9 +25,11 @@ jobs:
 
       - name: Run GitLab exporter script
         run: ./gitlab-exporter.sh
+      - name: List Output Directory
+        run: ls -la ./output
 
       - name: Upload Exported Archive
         uses: actions/upload-artifact@v3
         with:
           name: migration_archive
-          path: ./output/migration_archive.tar.gz
+          path: output/migration_archive.tar.gz
