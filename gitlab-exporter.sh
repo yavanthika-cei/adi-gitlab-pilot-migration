@@ -9,7 +9,9 @@ if [[ -z "$GITLAB_TOKEN" || -z "$PROJECT_NAME" || -z "$NAMESPACE" ]]; then
   exit 1
 fi
 cd ./gl-exporter-1.7.1
-chmod +x ./script/bootstrap && ./script/bootstrap
+ls -lt
+chmod +x ./script/bootstrap
+./script/bootstrap
 gl-exporter --version
 
 # Define variables
