@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/groups/hackmouse/members?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 09 Aug 2017 18:42:16 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1260'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0012ee66aabbd1fe53d2d7d4d8d144d3"
+      Link:
+      - <https://gitlab.com/api/v3/groups/hackmouse/members?id=hackmouse&page=1&per_page=100>;
+        rel="first", <https://gitlab.com/api/v3/groups/hackmouse/members?id=hackmouse&page=1&per_page=100>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 2b986633-8930-4863-9e31-f1aa4413ef25
+      X-Runtime:
+      - '0.171762'
+      X-Total:
+      - '5'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/spraints","access_level":40,"expires_at":null},{"name":"Lizz
+        Hale","username":"ehale","id":47125,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/12732e93949b0450ff987ae2d409a261?s=80\u0026d=identicon","web_url":"https://gitlab.com/ehale","access_level":10,"expires_at":null},{"name":"Jon
+        Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/jonmagic","access_level":20,"expires_at":null},{"name":"Matt","username":"mattcantstop","id":417001,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/9c1fb6cb9d54ce36a84cca0aa4567ea3?s=80\u0026d=identicon","web_url":"https://gitlab.com/mattcantstop","access_level":30,"expires_at":null},{"name":"Kyle
+        Macey","username":"kylemacey","id":414903,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/kylemacey","access_level":50,"expires_at":null}]'
+    http_version: 
+  recorded_at: Wed, 09 Aug 2017 18:42:16 GMT
+recorded_with: VCR 3.0.1

@@ -1,0 +1,146 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/hackmouse%2Fexample-project
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 May 2016 16:49:26 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1278'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"059d7c64b1e0245a02734c718c381928"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 251095ce-30fa-4eed-a915-a708343b6e2e
+      X-Runtime:
+      - '3.416421'
+    body:
+      encoding: UTF-8
+      string: '{"id":1148906,"description":"This is an example project","default_branch":"master","tag_list":[],"public":true,"archived":false,"visibility_level":20,"ssh_url_to_repo":"git@gitlab.com:hackmouse/example-project.git","http_url_to_repo":"https://gitlab.com/hackmouse/example-project.git","web_url":"https://gitlab.com/hackmouse/example-project","name":"example-project","name_with_namespace":"Hack
+        Mouse / example-project","path":"example-project","path_with_namespace":"hackmouse/example-project","issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-05-04T18:07:59.301Z","last_activity_at":"2016-05-10T16:56:02.198Z","shared_runners_enabled":true,"creator_id":414903,"namespace":{"id":488675,"name":"Hack
+        Mouse","path":"hackmouse","owner_id":null,"created_at":"2016-02-17T16:19:30.977Z","updated_at":"2016-02-17T18:15:05.721Z","description":"","avatar":{"url":null},"membership_lock":false,"share_with_group_lock":false,"visibility_level":20,"last_ldap_sync_at":null},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":1,"runners_token":"oPbCcGsvrVaSTdG2R_8N","public_builds":true,"permissions":{"project_access":null,"group_access":{"access_level":50,"notification_level":3}}}'
+    http_version: 
+  recorded_at: Wed, 11 May 2016 16:49:26 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/hackmouse%2FSpoon-Knife
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 May 2016 16:49:26 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1270'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"66fa851f5182bfc41c81f4916859f2d8"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 8887a3e8-7e83-4c25-a029-28a6822fc614
+      X-Runtime:
+      - '0.109809'
+    body:
+      encoding: UTF-8
+      string: '{"id":1148490,"description":"This repo is for demonstration purposes
+        only.","default_branch":"master","tag_list":[],"public":true,"archived":false,"visibility_level":20,"ssh_url_to_repo":"git@gitlab.com:hackmouse/Spoon-Knife.git","http_url_to_repo":"https://gitlab.com/hackmouse/Spoon-Knife.git","web_url":"https://gitlab.com/hackmouse/Spoon-Knife","name":"Spoon-Knife","name_with_namespace":"Hack
+        Mouse / Spoon-Knife","path":"Spoon-Knife","path_with_namespace":"hackmouse/Spoon-Knife","issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":false,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-05-04T15:50:37.088Z","last_activity_at":"2016-05-04T15:50:37.697Z","shared_runners_enabled":true,"creator_id":414903,"namespace":{"id":488675,"name":"Hack
+        Mouse","path":"hackmouse","owner_id":null,"created_at":"2016-02-17T16:19:30.977Z","updated_at":"2016-02-17T18:15:05.721Z","description":"","avatar":{"url":null},"membership_lock":false,"share_with_group_lock":false,"visibility_level":20,"last_ldap_sync_at":null},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":0,"runners_token":"K_34Xu6PhcyuxPXtE3mT","public_builds":true,"permissions":{"project_access":null,"group_access":{"access_level":50,"notification_level":3}}}'
+    http_version: 
+  recorded_at: Wed, 11 May 2016 16:49:26 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/kylemacey%2FSpoon-Knife
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 May 2016 16:49:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1493'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"83f1f87a847263b90cd5c0fccd1935a0"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 035bbce4-906a-4e5d-ba25-73da462d259b
+      X-Runtime:
+      - '2.628923'
+    body:
+      encoding: UTF-8
+      string: '{"id":1123699,"description":"This repo is for demonstration purposes
+        only.","default_branch":"master","tag_list":[],"public":true,"archived":false,"visibility_level":20,"ssh_url_to_repo":"git@gitlab.com:kylemacey/Spoon-Knife.git","http_url_to_repo":"https://gitlab.com/kylemacey/Spoon-Knife.git","web_url":"https://gitlab.com/kylemacey/Spoon-Knife","owner":{"name":"Kyle
+        Macey","username":"kylemacey","id":414903,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/kylemacey"},"name":"Spoon-Knife","name_with_namespace":"Kyle
+        Macey / Spoon-Knife","path":"Spoon-Knife","path_with_namespace":"kylemacey/Spoon-Knife","issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":false,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-04-27T19:27:08.692Z","last_activity_at":"2016-04-27T19:27:09.430Z","shared_runners_enabled":true,"creator_id":414903,"namespace":{"id":486715,"name":"kylemacey","path":"kylemacey","owner_id":414903,"created_at":"2016-02-16T16:36:31.652Z","updated_at":"2016-02-16T16:36:31.652Z","description":"","avatar":null,"membership_lock":false,"share_with_group_lock":false,"visibility_level":20,"last_ldap_sync_at":null},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":0,"runners_token":"SxNgdykKaW_4kzD5qvpE","public_builds":true,"permissions":{"project_access":{"access_level":40,"notification_level":3},"group_access":null}}'
+    http_version: 
+  recorded_at: Wed, 11 May 2016 16:49:29 GMT
+recorded_with: VCR 3.0.1

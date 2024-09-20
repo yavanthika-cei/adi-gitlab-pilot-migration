@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/issues/2192031/notes/11735615
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 May 2016 21:49:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '535'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"f49da78256347032a358c4272f1b9c02"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 648347e0-af60-4be5-b8f0-e58bfdc0d156
+      X-Runtime:
+      - '1.925080'
+    body:
+      encoding: UTF-8
+      string: '{"id":11735615,"body":"It looks like https://gitlab.com/Mouse-Hack/hugo-pages/merge_requests/1
+        has already :ship: ","attachment":null,"author":{"name":"Jon Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/jonmagic"},"created_at":"2016-05-10T22:27:02.519Z","updated_at":"2016-05-10T22:27:02.519Z","system":false,"noteable_id":2192031,"noteable_type":"Issue","upvote":false,"downvote":false}'
+    http_version: 
+  recorded_at: Wed, 11 May 2016 21:49:29 GMT
+recorded_with: VCR 3.0.1

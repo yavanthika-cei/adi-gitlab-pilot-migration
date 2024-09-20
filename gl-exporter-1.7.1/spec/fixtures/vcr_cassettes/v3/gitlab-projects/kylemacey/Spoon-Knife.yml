@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/kylemacey%2FSpoon-Knife
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Private-Token:
+      - <API_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 04 May 2016 18:39:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1493'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"83f1f87a847263b90cd5c0fccd1935a0"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 94bd04c1-3c74-4402-9b59-76001b3b636c
+      X-Runtime:
+      - '3.267049'
+    body:
+      encoding: UTF-8
+      string: '{"id":1123699,"description":"This repo is for demonstration purposes
+        only.","default_branch":"master","tag_list":[],"public":true,"archived":false,"visibility_level":20,"ssh_url_to_repo":"git@gitlab.com:kylemacey/Spoon-Knife.git","http_url_to_repo":"https://gitlab.com/kylemacey/Spoon-Knife.git","web_url":"https://gitlab.com/kylemacey/Spoon-Knife","owner":{"name":"Kyle
+        Macey","username":"kylemacey","id":414903,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/kylemacey"},"name":"Spoon-Knife","name_with_namespace":"Kyle
+        Macey / Spoon-Knife","path":"Spoon-Knife","path_with_namespace":"kylemacey/Spoon-Knife","issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":false,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-04-27T19:27:08.692Z","last_activity_at":"2016-04-27T19:27:09.430Z","shared_runners_enabled":true,"creator_id":414903,"namespace":{"id":486715,"name":"kylemacey","path":"kylemacey","owner_id":414903,"created_at":"2016-02-16T16:36:31.652Z","updated_at":"2016-02-16T16:36:31.652Z","description":"","avatar":null,"membership_lock":false,"share_with_group_lock":false,"visibility_level":20,"last_ldap_sync_at":null},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":0,"runners_token":"SxNgdykKaW_4kzD5qvpE","public_builds":true,"permissions":{"project_access":{"access_level":40,"notification_level":3},"group_access":null}}'
+    http_version: 
+  recorded_at: Wed, 04 May 2016 18:39:27 GMT
+recorded_with: VCR 3.0.1

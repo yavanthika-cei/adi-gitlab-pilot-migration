@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1123699/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 May 2016 18:33:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '932'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"43bcfc29725b8ed4d2c288324d20c838"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 6e9c1795-fbfd-4e53-bbeb-09cfa2e4d213
+      X-Runtime:
+      - '3.196059'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"bug","color":"#ee0701","description":null,"open_issues_count":0,"closed_issues_count":0,"open_merge_requests_count":0},{"name":"duplicate","color":"#cccccc","description":null,"open_issues_count":0,"closed_issues_count":0,"open_merge_requests_count":0},{"name":"enhancement","color":"#84b6eb","description":null,"open_issues_count":0,"closed_issues_count":0,"open_merge_requests_count":0},{"name":"help
+        wanted","color":"#128A0C","description":null,"open_issues_count":0,"closed_issues_count":0,"open_merge_requests_count":0},{"name":"invalid","color":"#e6e6e6","description":null,"open_issues_count":0,"closed_issues_count":0,"open_merge_requests_count":0},{"name":"question","color":"#cc317c","description":null,"open_issues_count":0,"closed_issues_count":0,"open_merge_requests_count":0},{"name":"wontfix","color":"#ffffff","description":null,"open_issues_count":0,"closed_issues_count":0,"open_merge_requests_count":0}]'
+    http_version: 
+  recorded_at: Wed, 11 May 2016 18:33:38 GMT
+recorded_with: VCR 3.0.1

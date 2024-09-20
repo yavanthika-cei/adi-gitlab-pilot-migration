@@ -1,0 +1,416 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=Mouse-Hack
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 22:12:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - a7c96372-e23b-40a1-9f3d-fe691ff369ed
+      X-Runtime:
+      - '2.346617'
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 12 May 2016 22:12:33 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/groups/Mouse-Hack
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 22:12:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1406'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"e9c7a7d8e453899f96ecf24ca8bef770"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 3e2011a2-47b3-4c82-8bdd-a453cc3765d8
+      X-Runtime:
+      - '2.278767'
+    body:
+      encoding: UTF-8
+      string: '{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","description":"","visibility_level":20,"ldap_cn":null,"ldap_access":null,"avatar_url":null,"web_url":"https://gitlab.com/groups/Mouse-Hack","projects":[{"id":1169162,"description":"Wanna
+        use something other than jekyll? Try this one weird trick. er, actually a
+        bunch of tricks, glued together.","default_branch":"master","tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:Mouse-Hack/hugo-pages.git","http_url_to_repo":"https://gitlab.com/Mouse-Hack/hugo-pages.git","web_url":"https://gitlab.com/Mouse-Hack/hugo-pages","name":"hugo-pages","name_with_namespace":"Mouse-Hack
+        / hugo-pages","path":"hugo-pages","path_with_namespace":"Mouse-Hack/hugo-pages","issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-05-10T21:15:14.616Z","last_activity_at":"2016-05-12T20:50:37.226Z","shared_runners_enabled":true,"creator_id":142189,"namespace":{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","owner_id":null,"created_at":"2016-05-10T22:02:36.633Z","updated_at":"2016-05-10T22:02:36.633Z","description":"","avatar":{"url":null},"membership_lock":false,"share_with_group_lock":false,"visibility_level":20,"last_ldap_sync_at":null},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":4,"public_builds":true}]}'
+    http_version: 
+  recorded_at: Thu, 12 May 2016 22:12:35 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/groups/Mouse-Hack/members
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 22:12:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1172'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"e329362de79c064b46e0e9097bad58ea"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 1745f4d8-1c28-47de-896d-e417a36203bd
+      X-Runtime:
+      - '2.127612'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Lizz Hale","username":"ehale","id":47125,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/12732e93949b0450ff987ae2d409a261?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/ehale","access_level":10},{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/lizzhale","access_level":20},{"name":"Jon
+        Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/jonmagic","access_level":30},{"name":"Kyle
+        Macey","username":"kylemacey","id":414903,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/kylemacey","access_level":40},{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints","access_level":50}]'
+    http_version: 
+  recorded_at: Thu, 12 May 2016 22:12:38 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=ehale
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 22:12:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '213'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"5e0eeaec5bef4042d990103660b0589d"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 6e8603f7-4379-4730-9827-8be0ad028ab2
+      X-Runtime:
+      - '0.024945'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Lizz Hale","username":"ehale","id":47125,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/12732e93949b0450ff987ae2d409a261?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/ehale"}]'
+    http_version: 
+  recorded_at: Thu, 12 May 2016 22:12:38 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=lizzhale
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 22:12:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '215'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d5115f028f8af87fc9983e7dd8fa29d2"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - b79ffaf5-50aa-4534-ac7f-cb429a49d8b2
+      X-Runtime:
+      - '2.166678'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/lizzhale"}]'
+    http_version: 
+  recorded_at: Thu, 12 May 2016 22:12:40 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=jonmagic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 22:12:44 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '220'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"4e5c49d72571f0ad34fe0b909987a6e3"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 585ebd35-d57f-43d6-bdf5-115034c32cfa
+      X-Runtime:
+      - '2.145360'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Jon Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/jonmagic"}]'
+    http_version: 
+  recorded_at: Thu, 12 May 2016 22:12:43 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=kylemacey
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 22:12:44 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '223'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"6069ccf87acbc9650e8489c4f0c540e4"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 3a5b6091-1140-4ce7-b08e-22fe7021b740
+      X-Runtime:
+      - '0.028720'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Kyle Macey","username":"kylemacey","id":414903,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/kylemacey"}]'
+    http_version: 
+  recorded_at: Thu, 12 May 2016 22:12:43 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=spraints
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 22:12:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '215'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"ba0a848fe93046b841cb58f9d531941d"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 26899672-8198-4059-a6dd-07c49b1eb798
+      X-Runtime:
+      - '2.294181'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"}]'
+    http_version: 
+  recorded_at: Thu, 12 May 2016 22:12:46 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/merge_requests/476834/commits
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 22:12:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '499'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0475a66ca37ef923344a96e8d59549a2"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - e79e663a-e68c-4cfb-b33d-2cd57055f2bb
+      X-Runtime:
+      - '0.239088'
+    body:
+      encoding: UTF-8
+      string: '[{"id":"c222af415ecc78c644c139cbf5eb44a25205cbad","short_id":"c222af41","title":"Update
+        README to include TODO list","author_name":"Jonathan Hoyt","author_email":"hoyt@github.com","created_at":"2016-05-12T20:45:04.000+00:00","message":"Update
+        README to include TODO list\n"},{"id":"52bb63a29715e4d2db0cf85e985b300c0a9c5c6a","short_id":"52bb63a2","title":"babysteps","author_name":"Matt
+        Burke","author_email":"spraints@gmail.com","created_at":"2016-05-10T22:19:11.000+00:00","message":"babysteps\n"}]'
+    http_version: 
+  recorded_at: Thu, 12 May 2016 22:12:47 GMT
+recorded_with: VCR 3.0.1

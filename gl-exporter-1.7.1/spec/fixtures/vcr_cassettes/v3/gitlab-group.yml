@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/groups/hackmouse
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Private-Token:
+      - <API_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 29 Apr 2016 18:18:40 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1301'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"b753e77b8c105a07ba03227cbaad8857"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 0cc43981-92c5-45a2-9762-670a23656b73
+      X-Runtime:
+      - '2.844243'
+    body:
+      encoding: UTF-8
+      string: '{"id":488675,"name":"Hack Mouse","path":"hackmouse","description":"","visibility_level":20,"ldap_cn":null,"ldap_access":null,"avatar_url":null,"web_url":"https://gitlab.com/groups/hackmouse","projects":[{"id":881155,"description":"","default_branch":"master","tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:hackmouse/hellolololol.git","http_url_to_repo":"https://gitlab.com/hackmouse/hellolololol.git","web_url":"https://gitlab.com/hackmouse/hellolololol","name":"hellolololol","name_with_namespace":"Hack
+        Mouse / hellolololol","path":"hellolololol","path_with_namespace":"hackmouse/hellolololol","issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":false,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-02-17T17:58:52.497Z","last_activity_at":"2016-02-17T17:58:52.989Z","shared_runners_enabled":true,"creator_id":414903,"namespace":{"id":488675,"name":"Hack
+        Mouse","path":"hackmouse","owner_id":null,"created_at":"2016-02-17T16:19:30.977Z","updated_at":"2016-02-17T18:15:05.721Z","description":"","avatar":{"url":null},"membership_lock":false,"share_with_group_lock":false,"visibility_level":20,"last_ldap_sync_at":null},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":0,"public_builds":true}]}'
+    http_version: 
+  recorded_at: Fri, 29 Apr 2016 18:18:40 GMT
+recorded_with: VCR 3.0.1

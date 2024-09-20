@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/hackmouse%2FSpoon-Knife
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 May 2016 17:19:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1270'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"66fa851f5182bfc41c81f4916859f2d8"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 665b9329-11f7-4b70-bdc1-a4bcf016ac1b
+      X-Runtime:
+      - '3.107957'
+    body:
+      encoding: UTF-8
+      string: '{"id":1148490,"description":"This repo is for demonstration purposes
+        only.","default_branch":"master","tag_list":[],"public":true,"archived":false,"visibility_level":20,"ssh_url_to_repo":"git@gitlab.com:hackmouse/Spoon-Knife.git","http_url_to_repo":"https://gitlab.com/hackmouse/Spoon-Knife.git","web_url":"https://gitlab.com/hackmouse/Spoon-Knife","name":"Spoon-Knife","name_with_namespace":"Hack
+        Mouse / Spoon-Knife","path":"Spoon-Knife","path_with_namespace":"hackmouse/Spoon-Knife","issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":false,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-05-04T15:50:37.088Z","last_activity_at":"2016-05-04T15:50:37.697Z","shared_runners_enabled":true,"creator_id":414903,"namespace":{"id":488675,"name":"Hack
+        Mouse","path":"hackmouse","owner_id":null,"created_at":"2016-02-17T16:19:30.977Z","updated_at":"2016-02-17T18:15:05.721Z","description":"","avatar":{"url":null},"membership_lock":false,"share_with_group_lock":false,"visibility_level":20,"last_ldap_sync_at":null},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":0,"runners_token":"K_34Xu6PhcyuxPXtE3mT","public_builds":true,"permissions":{"project_access":null,"group_access":{"access_level":50,"notification_level":3}}}'
+    http_version: 
+  recorded_at: Wed, 11 May 2016 17:19:45 GMT
+recorded_with: VCR 3.0.1

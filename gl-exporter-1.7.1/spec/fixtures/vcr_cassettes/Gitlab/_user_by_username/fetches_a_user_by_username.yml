@@ -1,0 +1,177 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/users?username=78491623
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 24 Sep 2019 14:59:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '218'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"69b67738c532628c1b5f7c044549a465"
+      Link:
+      - <https://gitlab.com/api/v4/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=78491623&with_custom_attributes=false>;
+        rel="first", <https://gitlab.com/api/v4/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=78491623&with_custom_attributes=false>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - zl9UuIiOIq3
+      X-Runtime:
+      - '0.032852'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '1'
+      Ratelimit-Remaining:
+      - '599'
+      Ratelimit-Reset:
+      - '1569337214'
+      Ratelimit-Resettime:
+      - Tue, 24 Sep 2019 15:00:14 GMT
+      Gitlab-Lb:
+      - fe-18-lb-gprd
+      Gitlab-Sv:
+      - localhost
+    body:
+      encoding: UTF-8
+      string: '[{"id":4676821,"name":"78491623","username":"78491623","state":"active","avatar_url":"https://secure.gravatar.com/avatar/44c7e334dbb5051e9e376b96d6490ada?s=80\u0026d=identicon","web_url":"https://gitlab.com/78491623"}]'
+    http_version: 
+  recorded_at: Tue, 24 Sep 2019 14:59:14 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/users?username=78491623
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - ''
+      User-Agent:
+      - Faraday v0.17.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 06 May 2022 16:21:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"9e8f2d297ff8a4749a86a574002505c1"
+      Link:
+      - <https://gitlab.com/api/v4/users?active=false&admins=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=78491623&with_custom_attributes=false&without_project_bots=false>;
+        rel="first", <https://gitlab.com/api/v4/users?active=false&admins=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=78491623&with_custom_attributes=false&without_project_bots=false>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 01G2D2SZP49X7PHXDTAHN9Q7VY
+      X-Runtime:
+      - '0.031126'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Ratelimit-Observed:
+      - '7'
+      Ratelimit-Remaining:
+      - '1993'
+      Ratelimit-Reset:
+      - '1651854141'
+      Ratelimit-Resettime:
+      - Fri, 06 May 2022 16:22:21 GMT
+      Ratelimit-Limit:
+      - '2000'
+      Gitlab-Lb:
+      - fe-03-lb-gprd
+      Gitlab-Sv:
+      - localhost
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bgB1KA3cXr4r00LoBYzMHvnPYVP0BLQb1tQYQiR7W%2Bsc8hbXFrKNT48RhhPGv4xYrx%2BFYvAuBYG4IX%2FbNiTgWHWH4wAv6IpXWD96ok5c2DzPKTFLfw4fs66Asys%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 70730c6a584d39fb-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":4676821,"username":"78491623","name":"78491623","state":"active","avatar_url":"https://secure.gravatar.com/avatar/44c7e334dbb5051e9e376b96d6490ada?s=80\u0026d=identicon","web_url":"https://gitlab.com/78491623"}]'
+    http_version: 
+  recorded_at: Fri, 06 May 2022 16:21:21 GMT
+recorded_with: VCR 3.0.3

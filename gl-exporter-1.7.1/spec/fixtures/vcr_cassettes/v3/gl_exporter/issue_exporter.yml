@@ -1,0 +1,197 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=jonmagic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 21 Oct 2016 22:20:08 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '218'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"ca6e9eab8324ba4eb25f7a78100dc4d6"
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 611d2781-8b64-42cb-81fb-f0f59d1764f5
+      X-Runtime:
+      - '0.029065'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Jon Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/jonmagic"}]'
+    http_version: 
+  recorded_at: Fri, 21 Oct 2016 22:20:08 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=kylemacey
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 21 Oct 2016 22:20:08 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '221'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0397cdea7058336bfa759c4e444f4a63"
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 8c51abc8-f8a1-4279-88f6-6e0f136a0bd9
+      X-Runtime:
+      - '0.035931'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Kyle Macey","username":"kylemacey","id":414903,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/kylemacey"}]'
+    http_version: 
+  recorded_at: Fri, 21 Oct 2016 22:20:08 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/issues/2192031/notes?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 21 Oct 2016 22:20:09 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2985'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"a1c80f4bfd347a2488e5922c5c4eb711"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/issues/2192031/notes?id=1169162&issue_id=2192031&page=1&per_page=100>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/issues/2192031/notes?id=1169162&issue_id=2192031&page=1&per_page=100>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 2a119577-ca6d-4370-b0a7-22bffea527aa
+      X-Runtime:
+      - '0.123288'
+      X-Total:
+      - '6'
+      X-Total-Pages:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":11735605,"body":"mentioned in issue #1","attachment":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/spraints"},"created_at":"2016-05-10T22:26:08.164Z","updated_at":"2016-05-10T22:26:08.164Z","system":true,"noteable_id":2192031,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11736049,"body":"Added
+        ~248627 label","attachment":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/spraints"},"created_at":"2016-05-10T23:24:26.110Z","updated_at":"2016-05-10T23:24:26.110Z","system":true,"noteable_id":2192031,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11753624,"body":"Reassigned
+        to @kylemacey","attachment":null,"author":{"name":"Kyle Macey","username":"kylemacey","id":414903,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/kylemacey"},"created_at":"2016-05-11T17:24:31.412Z","updated_at":"2016-05-11T17:24:31.412Z","system":true,"noteable_id":2192031,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11758867,"body":"[Inconsolata.zip](/uploads/5350f2aa2c0b534e47f478cb58b92ba1/Inconsolata.zip)","attachment":null,"author":{"name":"Jon
+        Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/jonmagic"},"created_at":"2016-05-11T21:50:07.711Z","updated_at":"2016-05-11T21:50:07.711Z","system":false,"noteable_id":2192031,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11758710,"body":"![2016-05-08_at_9.01_PM](/uploads/4e526753a5ef631b0407a83d946ee158/2016-05-08_at_9.01_PM.png)","attachment":null,"author":{"name":"Jon
+        Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/jonmagic"},"created_at":"2016-05-11T21:40:53.602Z","updated_at":"2016-05-11T21:40:53.602Z","system":false,"noteable_id":2192031,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11735615,"body":"It
+        looks like https://gitlab.com/Mouse-Hack/hugo-pages/merge_requests/1 has already
+        :ship: ","attachment":null,"author":{"name":"Jon Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/jonmagic"},"created_at":"2016-05-10T22:27:02.519Z","updated_at":"2016-05-10T22:27:02.519Z","system":false,"noteable_id":2192031,"noteable_type":"Issue","upvote?":false,"downvote?":false}]'
+    http_version: 
+  recorded_at: Fri, 21 Oct 2016 22:20:09 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=spraints
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 21 Oct 2016 22:20:09 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '213'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"bd3f9f832a13324f9c4c04c0ec6eb0a5"
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 5cc782c5-56d6-457b-be65-ae20d05c6ee4
+      X-Runtime:
+      - '0.049700'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/spraints"}]'
+    http_version: 
+  recorded_at: Fri, 21 Oct 2016 22:20:09 GMT
+recorded_with: VCR 3.0.1

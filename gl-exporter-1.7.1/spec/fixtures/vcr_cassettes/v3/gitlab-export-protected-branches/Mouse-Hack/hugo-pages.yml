@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/branches
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 26 Jul 2017 18:55:11 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3862'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"624ef694f86a3335847b43af0074891e"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 49b245f6-4452-49ee-8faa-c06b9790ae38
+      X-Runtime:
+      - '0.380016'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"name":"fp-pr","commit":{"id":"542aed8ddc52388ce24212a74ecba6a511a9a763","short_id":"542aed8d","title":"foo","created_at":"2016-10-03T17:24:29.000-04:00","parent_ids":["3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd"],"message":"foo\n","author_name":"Kyle
+        Macey","author_email":"kylemacey@github.com","authored_date":"2016-10-03T17:24:29.000-04:00","committer_name":"Kyle
+        Macey","committer_email":"kylemacey@github.com","committed_date":"2016-10-03T17:24:29.000-04:00"},"merged":false,"protected":false,"developers_can_push":false,"developers_can_merge":false},{"name":"master","commit":{"id":"fc40f8230aab1a10e16c70b2706e2d2a6164eea0","short_id":"fc40f823","title":"Merge
+        branch ''merged-fork-pr'' into ''master''\r","created_at":"2016-11-23T20:43:35.000+00:00","parent_ids":["3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd","75d5f1a0a3f8c07806512a647d16d60c4cd1c36f"],"message":"Merge
+        branch ''merged-fork-pr'' into ''master''\r\n\r\nMerged Fork PR\r\n\r\nSee
+        merge request !7","author_name":"Kyle Macey","author_email":"shout@kylemacey.com","authored_date":"2016-11-23T20:43:35.000+00:00","committer_name":"Kyle
+        Macey","committer_email":"shout@kylemacey.com","committed_date":"2016-11-23T20:43:35.000+00:00"},"merged":false,"protected":true,"developers_can_push":true,"developers_can_merge":true},{"name":"no-commits","commit":{"id":"fc40f8230aab1a10e16c70b2706e2d2a6164eea0","short_id":"fc40f823","title":"Merge
+        branch ''merged-fork-pr'' into ''master''\r","created_at":"2016-11-23T20:43:35.000+00:00","parent_ids":["3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd","75d5f1a0a3f8c07806512a647d16d60c4cd1c36f"],"message":"Merge
+        branch ''merged-fork-pr'' into ''master''\r\n\r\nMerged Fork PR\r\n\r\nSee
+        merge request !7","author_name":"Kyle Macey","author_email":"shout@kylemacey.com","authored_date":"2016-11-23T20:43:35.000+00:00","committer_name":"Kyle
+        Macey","committer_email":"shout@kylemacey.com","committed_date":"2016-11-23T20:43:35.000+00:00"},"merged":false,"protected":false,"developers_can_push":false,"developers_can_merge":false},{"name":"omniauth-login","commit":{"id":"c222af415ecc78c644c139cbf5eb44a25205cbad","short_id":"c222af41","title":"Update
+        README to include TODO list","created_at":"2016-05-12T13:45:04.000-07:00","parent_ids":["52bb63a29715e4d2db0cf85e985b300c0a9c5c6a"],"message":"Update
+        README to include TODO list\n","author_name":"Jonathan Hoyt","author_email":"hoyt@github.com","authored_date":"2016-05-12T13:45:04.000-07:00","committer_name":"Jonathan
+        Hoyt","committer_email":"hoyt@github.com","committed_date":"2016-05-12T13:45:04.000-07:00"},"merged":false,"protected":false,"developers_can_push":false,"developers_can_merge":false},{"name":"test-branch","commit":{"id":"a7c109c372ca8869b22350f2977cf75334d6bf57","short_id":"a7c109c3","title":"Update
+        README.md","created_at":"2016-05-11T22:58:55.000+00:00","parent_ids":["3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd"],"message":"Update
+        README.md","author_name":"Kyle Macey","author_email":"shout@kylemacey.com","authored_date":"2016-05-11T22:58:55.000+00:00","committer_name":"Kyle
+        Macey","committer_email":"shout@kylemacey.com","committed_date":"2016-05-11T22:58:55.000+00:00"},"merged":false,"protected":true,"developers_can_push":true,"developers_can_merge":true},{"name":"test-commit-comments","commit":{"id":"2d26b4300e6b7d2047690d67ffca167222b41b31","short_id":"2d26b430","title":"Update
+        README.md\r","created_at":"2017-04-06T14:59:52.000+00:00","parent_ids":["fc40f8230aab1a10e16c70b2706e2d2a6164eea0"],"message":"Update
+        README.md\r\n\r\n- added new line for testing purposes","author_name":"Daniel
+        Perez","author_email":"dpmex4527@gmail.com","authored_date":"2017-04-06T14:59:52.000+00:00","committer_name":"Daniel
+        Perez","committer_email":"dpmex4527@gmail.com","committed_date":"2017-04-06T14:59:52.000+00:00"},"merged":false,"protected":false,"developers_can_push":false,"developers_can_merge":false}]'
+    http_version: 
+  recorded_at: Wed, 26 Jul 2017 18:55:11 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 26 Jul 2017 18:55:13 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '746'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"f3c26d04fd2d0ada783aad134bd52226"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - fcfd189a-3018-463a-af67-8529fc3caaf6
+      X-Runtime:
+      - '0.076816'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"name":"Daniel Perez","username":"dpmex4527","id":1238984,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/47338cb6ea1c84bfd0bbafd6a1298f3d?s=80&d=identicon","web_url":"https://gitlab.com/dpmex4527","created_at":"2017-04-04T19:52:54.496Z","bio":null,"location":null,"skype":"","linkedin":"","twitter":"","website_url":"","organization":null,"last_sign_in_at":"2017-07-26T16:01:29.442Z","confirmed_at":"2017-04-04T19:53:15.263Z","last_activity_on":"2017-07-24","email":"dpmex4527@gmail.com","color_scheme_id":1,"projects_limit":100000,"current_sign_in_at":"2017-07-26T17:31:43.093Z","identities":[],"can_create_group":true,"can_create_project":true,"two_factor_enabled":false,"external":false,"shared_runners_minutes_limit":null}'
+    http_version: 
+  recorded_at: Wed, 26 Jul 2017 18:55:13 GMT
+recorded_with: VCR 3.0.3

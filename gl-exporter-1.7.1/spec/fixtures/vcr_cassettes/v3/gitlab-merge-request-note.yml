@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/merge_requests/476834/notes/11735567
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 17:55:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '465'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d48f95e98c45cd60dd14ed5e693ef82e"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 5b2b3da4-8735-41b3-8b24-141cf227db22
+      X-Runtime:
+      - '1.731165'
+    body:
+      encoding: UTF-8
+      string: '{"id":11735567,"body":"asdfasdfasdfasdfasdf","attachment":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"created_at":"2016-05-10T22:20:54.384Z","updated_at":"2016-05-10T22:20:54.384Z","system":false,"noteable_id":476834,"noteable_type":"MergeRequest","upvote":false,"downvote":false}'
+    http_version: 
+  recorded_at: Thu, 12 May 2016 17:55:14 GMT
+recorded_with: VCR 3.0.1

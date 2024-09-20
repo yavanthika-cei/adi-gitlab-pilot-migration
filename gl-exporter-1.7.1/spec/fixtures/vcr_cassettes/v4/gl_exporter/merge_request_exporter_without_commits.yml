@@ -1,0 +1,365 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/1169162/merge_requests/10/commits
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 27 Aug 2017 21:09:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v4/projects/1169162/merge_requests/10/commits?id=1169162&merge_request_iid=10&page=1&per_page=20>;
+        rel="first", <https://gitlab.com/api/v4/projects/1169162/merge_requests/10/commits?id=1169162&merge_request_iid=10&page=1&per_page=20>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 4427901f-dc87-4080-9365-6ca0521982cf
+      X-Runtime:
+      - '0.182531'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sun, 27 Aug 2017 21:09:28 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/1169162/merge_requests/10/commits?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v1.10.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Nov 2023 22:49:19 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy:
+      - default-src 'none'
+      Etag:
+      - W/"4f53cda18c2baa0c0354bb5f9a3ecbe5"
+      Link:
+      - <https://gitlab.com/api/v4/projects/1169162/merge_requests/10/commits?id=1169162&merge_request_iid=10&page=1&per_page=100>;
+        rel="first", <https://gitlab.com/api/v4/projects/1169162/merge_requests/10/commits?id=1169162&merge_request_iid=10&page=1&per_page=100>;
+        rel="last"
+      Vary:
+      - Origin, Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Gitlab-Meta:
+      - '{"correlation_id":"9ad16e6958ee794492c8f8f84d017cb6","version":"1"}'
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 9ad16e6958ee794492c8f8f84d017cb6
+      X-Runtime:
+      - '0.156455'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Ratelimit-Observed:
+      - '10'
+      Ratelimit-Remaining:
+      - '1990'
+      Ratelimit-Reset:
+      - '1699051819'
+      Ratelimit-Resettime:
+      - Fri, 03 Nov 2023 22:50:19 GMT
+      Ratelimit-Limit:
+      - '2000'
+      Gitlab-Lb:
+      - haproxy-main-19-lb-gprd
+      Gitlab-Sv:
+      - localhost
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0wyfKbTmIdrIMVBwse%2F6Z3jEx0DnDD9KdVnhkUFjjfskIIQwjB29rtgg58FBrGcHTJqsrRsPLRQX9MCbX4hseokrKXxKAxW3z%2FkeKZ2yITcJCIU4S2uXxzzOktg%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Set-Cookie:
+      - _cfuvid=HA3NF7anH5zAQ0lvuKgC.1S0ZhpSlrwM9EBgBFctiWM-1699051759993-0-604800000;
+        path=/; domain=.gitlab.com; HttpOnly; Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 82082b7a69b07d59-LAX
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Fri, 03 Nov 2023 22:49:20 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/users?username=synthead
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v1.10.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Nov 2023 22:49:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy:
+      - default-src 'none'
+      Etag:
+      - W/"1698b5f8a2b510a8bc068b323ab7c4d7"
+      Link:
+      - <https://gitlab.com/api/v4/users?active=false&admins=false&auditors=false&blocked=false&exclude_external=false&exclude_internal=false&external=false&order_by=id&page=1&per_page=20&skip_ldap=false&sort=desc&username=synthead&with_custom_attributes=false&without_project_bots=false&without_projects=false>;
+        rel="first", <https://gitlab.com/api/v4/users?active=false&admins=false&auditors=false&blocked=false&exclude_external=false&exclude_internal=false&external=false&order_by=id&page=1&per_page=20&skip_ldap=false&sort=desc&username=synthead&with_custom_attributes=false&without_project_bots=false&without_projects=false>;
+        rel="last"
+      Vary:
+      - Origin, Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Gitlab-Meta:
+      - '{"correlation_id":"b8357e3165c730a8793a6fb5cba351ed","version":"1"}'
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - b8357e3165c730a8793a6fb5cba351ed
+      X-Runtime:
+      - '0.047817'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Ratelimit-Observed:
+      - '11'
+      Ratelimit-Remaining:
+      - '1989'
+      Ratelimit-Reset:
+      - '1699051820'
+      Ratelimit-Resettime:
+      - Fri, 03 Nov 2023 22:50:20 GMT
+      Ratelimit-Limit:
+      - '2000'
+      Gitlab-Lb:
+      - haproxy-main-04-lb-gprd
+      Gitlab-Sv:
+      - localhost
+      Cf-Cache-Status:
+      - MISS
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=j7umG41HepFojbt7JfFmZflPLLbZaGJ1jjeOrtQ1RwEADaFG3iDDAayCTTpTSmz0jU%2FnlrDLs%2Fo76kGkejKJaR3Fqo8d80ShT3yQ8NNalychuhVhZ2xDKl3BEkY%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Set-Cookie:
+      - _cfuvid=D5zV9Ot5tlTcD2V8COpIFXIH_AIQSZ2JAE6tvbp_YkU-1699051760161-0-604800000;
+        path=/; domain=.gitlab.com; HttpOnly; Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 82082b7c2b212f39-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":1477621,"username":"synthead","name":"Maxwell Pray","state":"active","locked":false,"avatar_url":"https://gitlab.com/uploads/-/system/user/avatar/1477621/avatar.png","web_url":"https://gitlab.com/synthead"}]'
+  recorded_at: Fri, 03 Nov 2023 22:49:20 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/1169162/merge_requests/10/notes?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v1.10.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Nov 2023 22:49:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy:
+      - default-src 'none'
+      Etag:
+      - W/"c3d51193420280cdc00d9e4c43214e5b"
+      Link:
+      - <https://gitlab.com/api/v4/projects/1169162/merge_requests/10/notes?activity_filter=all_notes&id=1169162&noteable_id=10&order_by=created_at&page=1&per_page=100&sort=desc>;
+        rel="first", <https://gitlab.com/api/v4/projects/1169162/merge_requests/10/notes?activity_filter=all_notes&id=1169162&noteable_id=10&order_by=created_at&page=1&per_page=100&sort=desc>;
+        rel="last"
+      Vary:
+      - Origin, Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Gitlab-Meta:
+      - '{"correlation_id":"5fd2e74f09ae98d00038d71ede3ea75a","version":"1"}'
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 5fd2e74f09ae98d00038d71ede3ea75a
+      X-Runtime:
+      - '0.093960'
+      X-Total:
+      - '2'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Ratelimit-Observed:
+      - '12'
+      Ratelimit-Remaining:
+      - '1988'
+      Ratelimit-Reset:
+      - '1699051820'
+      Ratelimit-Resettime:
+      - Fri, 03 Nov 2023 22:50:20 GMT
+      Ratelimit-Limit:
+      - '2000'
+      Gitlab-Lb:
+      - haproxy-main-17-lb-gprd
+      Gitlab-Sv:
+      - localhost
+      Cf-Cache-Status:
+      - MISS
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TtW%2BJCcY4jjV8Vzr5U1em4aymkEwBXtSm3UmdcD%2F%2BmR1nNwSA9cDScVZ0xgJLVowzPJ2bSJdU%2B1pbew1lONaVh2y8ihxSapdpIrgUZ%2BduHj30PFnq5fZRkIrDfo%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Set-Cookie:
+      - _cfuvid=TbEfIjvyKtz5B3EKZO84DBga0YTnLPJxeI.McpSFqFs-1699051760380-0-604800000;
+        path=/; domain=.gitlab.com; HttpOnly; Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 82082b7d38557d23-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":36005564,"type":null,"body":"![image](/uploads/985f268ee941b49994d694f60b3e5203/image.png)","attachment":null,"author":{"id":1477621,"username":"synthead","name":"Maxwell
+        Pray","state":"active","locked":false,"avatar_url":"https://gitlab.com/uploads/-/system/user/avatar/1477621/avatar.png","web_url":"https://gitlab.com/synthead"},"created_at":"2017-07-26T17:34:57.572Z","updated_at":"2017-07-26T17:34:57.572Z","system":false,"noteable_id":4385181,"noteable_type":"MergeRequest","project_id":1169162,"resolvable":false,"confidential":false,"internal":false,"noteable_iid":10,"commands_changes":{}},{"id":36005529,"type":null,"body":"Test
+        comment","attachment":null,"author":{"id":1477621,"username":"synthead","name":"Maxwell
+        Pray","state":"active","locked":false,"avatar_url":"https://gitlab.com/uploads/-/system/user/avatar/1477621/avatar.png","web_url":"https://gitlab.com/synthead"},"created_at":"2017-07-26T17:34:19.879Z","updated_at":"2017-07-26T17:34:19.879Z","system":false,"noteable_id":4385181,"noteable_type":"MergeRequest","project_id":1169162,"resolvable":false,"confidential":false,"internal":false,"noteable_iid":10,"commands_changes":{}}]'
+  recorded_at: Fri, 03 Nov 2023 22:49:20 GMT
+recorded_with: VCR 6.1.0

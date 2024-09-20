@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1148490/members
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 08 Jul 2016 18:37:01 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1148490/members?id=1148490&page=1&per_page=20>;
+        rel="first", <https://gitlab.com/api/v3/projects/1148490/members?id=1148490&page=0&per_page=20>;
+        rel="last"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 518cbcd5-adba-4fb1-90f2-d823a4a1375a
+      X-Runtime:
+      - '0.104462'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Fri, 08 Jul 2016 18:37:01 GMT
+recorded_with: VCR 3.0.1

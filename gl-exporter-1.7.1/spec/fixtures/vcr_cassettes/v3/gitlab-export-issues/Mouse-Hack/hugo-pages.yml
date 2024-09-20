@@ -1,0 +1,161 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/issues
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 May 2016 18:54:00 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4133'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"f99801088c3d7a4b4c7d778bc9601651"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/issues?id=1169162&page=1&per_page=20>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/issues?id=1169162&page=1&per_page=20>;
+        rel="last"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 2ed8857a-90c6-4653-a909-bd399fc65e0f
+      X-Runtime:
+      - '3.735194'
+      X-Total:
+      - '5'
+      X-Total-Pages:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":2192031,"iid":5,"project_id":1169162,"title":"Don''t have a
+        GitHub account","description":"I appreciate wanting to support logging in
+        with GitHub but I don''t have a GitHub account and cannot legally sign up
+        for one in my country due to my age unless I get my parents permission. See
+        https://gitlab.com/Mouse-Hack/hugo-pages/issues/1 for more details.","state":"opened","created_at":"2016-05-10T22:20:29.872Z","updated_at":"2016-05-11T17:24:31.417Z","labels":["Blocker","Bug"],"milestone":{"id":62677,"iid":1,"project_id":1169162,"title":"Prototype","description":"Just
+        get the simplest thing working and out there for folks to try out.","state":"active","created_at":"2016-05-10T22:06:45.481Z","updated_at":"2016-05-10T22:06:45.481Z","due_date":"2020-04-20"},"assignee":{"name":"Kyle
+        Macey","username":"kylemacey","id":414903,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/kylemacey"},"author":{"name":"Jon
+        Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/jonmagic"},"subscribed":true},{"id":2191664,"iid":4,"project_id":1169162,"title":"Build
+        the hugo site","description":"This is the job that #3 queued.\r\n\r\n* `git
+        init`and `git remote add ...`\r\n* `git fetch origin hugo-pages gh-pages`\r\n*
+        checkout hugo-pages\r\n* `hugo build` or whatever\r\n* push the build to the
+        gh-pages branch with a  `.nojekyll` file.\r\n\r\n:boom: :camel: ","state":"opened","created_at":"2016-05-10T21:26:18.187Z","updated_at":"2016-05-10T22:15:35.935Z","labels":[],"milestone":null,"assignee":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"subscribed":false},{"id":2191638,"iid":3,"project_id":1169162,"title":"Listen
+        for the push webhook and queue a job","description":"This is just the API
+        glue that turns a webhook into a job.","state":"opened","created_at":"2016-05-10T21:23:02.181Z","updated_at":"2016-05-10T21:26:18.548Z","labels":[],"milestone":null,"assignee":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"subscribed":false},{"id":2191629,"iid":2,"project_id":1169162,"title":"Choose
+        a repository","description":"List my repositories, let me pick one to watch
+        for hugo-pages pushes, and set up the push hook for it.","state":"opened","created_at":"2016-05-10T21:22:04.933Z","updated_at":"2016-05-10T22:21:30.356Z","labels":[],"milestone":{"id":62677,"iid":1,"project_id":1169162,"title":"Prototype","description":"Just
+        get the simplest thing working and out there for folks to try out.","state":"active","created_at":"2016-05-10T22:06:45.481Z","updated_at":"2016-05-10T22:06:45.481Z","due_date":"2020-04-20"},"assignee":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"subscribed":false},{"id":2191619,"iid":1,"project_id":1169162,"title":"Sign
+        in with GitHub","description":"Get omniauth the rest of the way set up, and
+        get you logged in.","state":"closed","created_at":"2016-05-10T21:21:25.830Z","updated_at":"2016-05-10T22:26:00.525Z","labels":[],"milestone":null,"assignee":{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/lizzhale"},"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"subscribed":false}]'
+    http_version: 
+  recorded_at: Wed, 11 May 2016 18:54:00 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/issues?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 20 Jun 2016 19:52:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4367'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"00724b372de3f042c679fd771032a8c2"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/issues?id=1169162&page=1&per_page=100>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/issues?id=1169162&page=1&per_page=100>;
+        rel="last"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - cee74a97-a9f3-4d09-be22-068ee65ccc1b
+      X-Runtime:
+      - '0.966584'
+      X-Total:
+      - '5'
+      X-Total-Pages:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":2192031,"iid":5,"project_id":1169162,"title":"Don''t have a
+        GitHub account","description":"I appreciate wanting to support logging in
+        with GitHub but I don''t have a GitHub account and cannot legally sign up
+        for one in my country due to my age unless I get my parents permission. See
+        https://gitlab.com/Mouse-Hack/hugo-pages/issues/1 for more details.","state":"opened","created_at":"2016-05-10T22:20:29.872Z","updated_at":"2016-05-11T21:50:07.734Z","labels":["Blocker","Bug"],"milestone":{"id":62677,"iid":1,"project_id":1169162,"title":"Prototype","description":"Just
+        get the simplest thing working and out there for folks to try out.","state":"active","created_at":"2016-05-10T22:06:45.481Z","updated_at":"2016-05-10T22:06:45.481Z","due_date":"2020-04-20"},"assignee":{"name":"Kyle
+        Macey","username":"kylemacey","id":414903,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/kylemacey"},"author":{"name":"Jon
+        Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/jonmagic"},"subscribed":true,"user_notes_count":3,"upvotes":1,"downvotes":0},{"id":2191664,"iid":4,"project_id":1169162,"title":"Build
+        the hugo site","description":"This is the job that #3 queued.\r\n\r\n* `git
+        init`and `git remote add ...`\r\n* `git fetch origin hugo-pages gh-pages`\r\n*
+        checkout hugo-pages\r\n* `hugo build` or whatever\r\n* push the build to the
+        gh-pages branch with a  `.nojekyll` file.\r\n\r\n:boom: :camel: ","state":"opened","created_at":"2016-05-10T21:26:18.187Z","updated_at":"2016-05-11T22:02:30.758Z","labels":[],"milestone":null,"assignee":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"subscribed":true,"user_notes_count":1,"upvotes":0,"downvotes":0},{"id":2191638,"iid":3,"project_id":1169162,"title":"Listen
+        for the push webhook and queue a job","description":"This is just the API
+        glue that turns a webhook into a job.","state":"opened","created_at":"2016-05-10T21:23:02.181Z","updated_at":"2016-05-11T22:06:02.516Z","labels":[],"milestone":null,"assignee":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"subscribed":false,"user_notes_count":1,"upvotes":0,"downvotes":0},{"id":2191629,"iid":2,"project_id":1169162,"title":"Choose
+        a repository","description":"List my repositories, let me pick one to watch
+        for hugo-pages pushes, and set up the push hook for it.","state":"opened","created_at":"2016-05-10T21:22:04.933Z","updated_at":"2016-05-10T22:21:30.356Z","labels":[],"milestone":{"id":62677,"iid":1,"project_id":1169162,"title":"Prototype","description":"Just
+        get the simplest thing working and out there for folks to try out.","state":"active","created_at":"2016-05-10T22:06:45.481Z","updated_at":"2016-05-10T22:06:45.481Z","due_date":"2020-04-20"},"assignee":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"subscribed":false,"user_notes_count":0,"upvotes":0,"downvotes":0},{"id":2191619,"iid":1,"project_id":1169162,"title":"Sign
+        in with GitHub","description":"Get omniauth the rest of the way set up, and
+        get you logged in.","state":"closed","created_at":"2016-05-10T21:21:25.830Z","updated_at":"2016-05-11T22:06:06.287Z","labels":[],"milestone":null,"assignee":{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/lizzhale"},"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"subscribed":false,"user_notes_count":2,"upvotes":0,"downvotes":0}]'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 19:52:57 GMT
+recorded_with: VCR 3.0.1

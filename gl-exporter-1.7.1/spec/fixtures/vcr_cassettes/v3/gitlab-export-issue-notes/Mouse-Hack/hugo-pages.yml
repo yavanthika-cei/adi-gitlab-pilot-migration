@@ -1,0 +1,137 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/issues/2191619/notes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 May 2016 22:30:34 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3240'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"6a4415c64769035882616dcbfdb7a2a0"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/issues/2191619/notes?id=1169162&issue_id=2191619&page=1&per_page=20>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/issues/2191619/notes?id=1169162&issue_id=2191619&page=1&per_page=20>;
+        rel="last"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - eefcaf40-2423-4bc4-aa76-5ee764b28b7a
+      X-Runtime:
+      - '3.033614'
+      X-Total:
+      - '7'
+      X-Total-Pages:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":11760224,"body":"mentioned in issue #3","attachment":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"created_at":"2016-05-11T22:06:06.283Z","updated_at":"2016-05-11T22:06:06.283Z","system":true,"noteable_id":2191619,"noteable_type":"Issue","upvote":false,"downvote":false},{"id":11735604,"body":"Now
+        #5 does!","attachment":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"created_at":"2016-05-10T22:26:00.520Z","updated_at":"2016-05-10T22:26:00.520Z","system":false,"noteable_id":2191619,"noteable_type":"Issue","upvote":false,"downvote":false},{"id":11735556,"body":"mentioned
+        in issue #5","attachment":null,"author":{"name":"Jon Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/jonmagic"},"created_at":"2016-05-10T22:20:30.310Z","updated_at":"2016-05-10T22:20:30.310Z","system":true,"noteable_id":2191619,"noteable_type":"Issue","upvote":false,"downvote":false},{"id":11735551,"body":"I
+        think this was closed by !1","attachment":null,"author":{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/lizzhale"},"created_at":"2016-05-10T22:20:09.709Z","updated_at":"2016-05-10T22:20:09.709Z","system":false,"noteable_id":2191619,"noteable_type":"Issue","upvote":false,"downvote":false},{"id":11735550,"body":"Status
+        changed to closed","attachment":null,"author":{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/lizzhale"},"created_at":"2016-05-10T22:20:08.177Z","updated_at":"2016-05-10T22:20:08.177Z","system":true,"noteable_id":2191619,"noteable_type":"Issue","upvote":false,"downvote":false},{"id":11735454,"body":"mentioned
+        in merge request !1","attachment":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"created_at":"2016-05-10T22:09:14.324Z","updated_at":"2016-05-10T22:09:14.324Z","system":true,"noteable_id":2191619,"noteable_type":"Issue","upvote":false,"downvote":false},{"id":11735233,"body":"Reassigned
+        to @lizzhale","attachment":null,"author":{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/lizzhale"},"created_at":"2016-05-10T21:55:37.232Z","updated_at":"2016-05-10T21:55:37.232Z","system":true,"noteable_id":2191619,"noteable_type":"Issue","upvote":false,"downvote":false}]'
+    http_version: 
+  recorded_at: Wed, 11 May 2016 22:30:34 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/issues/2191619/notes?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 20 Jun 2016 19:52:58 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3254'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"cc30e06fdabea1aa0152a73c18da7131"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/issues/2191619/notes?id=1169162&issue_id=2191619&page=1&per_page=100>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/issues/2191619/notes?id=1169162&issue_id=2191619&page=1&per_page=100>;
+        rel="last"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 977b27ca-aeae-42c6-bd49-fd99ff55b693
+      X-Runtime:
+      - '0.187860'
+      X-Total:
+      - '7'
+      X-Total-Pages:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":11760224,"body":"mentioned in issue #3","attachment":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"created_at":"2016-05-11T22:06:06.283Z","updated_at":"2016-05-11T22:06:06.283Z","system":true,"noteable_id":2191619,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11735604,"body":"Now
+        #5 does!","attachment":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"created_at":"2016-05-10T22:26:00.520Z","updated_at":"2016-05-10T22:26:00.520Z","system":false,"noteable_id":2191619,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11735556,"body":"mentioned
+        in issue #5","attachment":null,"author":{"name":"Jon Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/jonmagic"},"created_at":"2016-05-10T22:20:30.310Z","updated_at":"2016-05-10T22:20:30.310Z","system":true,"noteable_id":2191619,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11735551,"body":"I
+        think this was closed by !1","attachment":null,"author":{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/lizzhale"},"created_at":"2016-05-10T22:20:09.709Z","updated_at":"2016-05-10T22:20:09.709Z","system":false,"noteable_id":2191619,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11735550,"body":"Status
+        changed to closed","attachment":null,"author":{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/lizzhale"},"created_at":"2016-05-10T22:20:08.177Z","updated_at":"2016-05-10T22:20:08.177Z","system":true,"noteable_id":2191619,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11735454,"body":"mentioned
+        in merge request !1","attachment":null,"author":{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints"},"created_at":"2016-05-10T22:09:14.324Z","updated_at":"2016-05-10T22:09:14.324Z","system":true,"noteable_id":2191619,"noteable_type":"Issue","upvote?":false,"downvote?":false},{"id":11735233,"body":"Reassigned
+        to @lizzhale","attachment":null,"author":{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/lizzhale"},"created_at":"2016-05-10T21:55:37.232Z","updated_at":"2016-05-10T21:55:37.232Z","system":true,"noteable_id":2191619,"noteable_type":"Issue","upvote?":false,"downvote?":false}]'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 19:52:58 GMT
+recorded_with: VCR 3.0.1

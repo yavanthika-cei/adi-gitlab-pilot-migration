@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/kylemacey%2Frepo-contrib-graph
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Private-Token:
+      - <API_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 05 May 2016 18:45:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1543'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"7d0da43c75dcdc0a74834fbc59b1576d"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 01f2a719-1f9e-47b7-b31c-9b545b797ed4
+      X-Runtime:
+      - '2.545426'
+    body:
+      encoding: UTF-8
+      string: '{"id":877707,"description":"Repository Contribution Graphs in your
+        terminal!","default_branch":"master","tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:kylemacey/repo-contrib-graph.git","http_url_to_repo":"https://gitlab.com/kylemacey/repo-contrib-graph.git","web_url":"https://gitlab.com/kylemacey/repo-contrib-graph","owner":{"name":"Kyle
+        Macey","username":"kylemacey","id":414903,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/kylemacey"},"name":"repo-contrib-graph","name_with_namespace":"Kyle
+        Macey / repo-contrib-graph","path":"repo-contrib-graph","path_with_namespace":"kylemacey/repo-contrib-graph","issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-02-16T22:55:38.924Z","last_activity_at":"2016-03-08T21:11:20.244Z","shared_runners_enabled":true,"creator_id":414903,"namespace":{"id":486715,"name":"kylemacey","path":"kylemacey","owner_id":414903,"created_at":"2016-02-16T16:36:31.652Z","updated_at":"2016-02-16T16:36:31.652Z","description":"","avatar":null,"membership_lock":false,"share_with_group_lock":false,"visibility_level":20,"last_ldap_sync_at":null},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":3,"runners_token":"mBhs2ugZwZdTvg2TEwbp","public_builds":true,"permissions":{"project_access":{"access_level":40,"notification_level":3},"group_access":null}}'
+    http_version: 
+  recorded_at: Thu, 05 May 2016 18:45:34 GMT
+recorded_with: VCR 3.0.1

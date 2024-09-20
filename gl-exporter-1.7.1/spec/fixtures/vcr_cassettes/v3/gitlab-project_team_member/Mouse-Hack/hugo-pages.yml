@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/members
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 08 Jul 2016 18:37:13 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '233'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"83d77d8e1c1f7b6b16fcff800940b46f"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/members?id=1169162&page=1&per_page=20>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/members?id=1169162&page=1&per_page=20>;
+        rel="last"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 0959970f-71eb-4d72-9d1d-1687a60d6961
+      X-Runtime:
+      - '0.119867'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Matt","username":"spraints","id":142189,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/u/spraints","access_level":40}]'
+    http_version: 
+  recorded_at: Fri, 08 Jul 2016 18:37:13 GMT
+recorded_with: VCR 3.0.1

@@ -1,0 +1,1565 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits?page=0&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:34 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '10609'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"a2ec4a59ee3403ddb45e838af9829075"
+      Vary:
+      - Origin
+      X-Request-Id:
+      - b25df6bc-a242-4c90-a046-eaf8a627b0f1
+      X-Runtime:
+      - '0.250933'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"id":"fc40f8230aab1a10e16c70b2706e2d2a6164eea0","short_id":"fc40f823","title":"Merge
+        branch ''merged-fork-pr'' into ''master''\r","created_at":"2016-11-23T20:43:35.000+00:00","parent_ids":["3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd","75d5f1a0a3f8c07806512a647d16d60c4cd1c36f"],"message":"Merge
+        branch ''merged-fork-pr'' into ''master''\r\n\r\nMerged Fork PR\r\n\r\nSee
+        merge request !7","author_name":"Kyle Macey","author_email":"shout@kylemacey.com","authored_date":"2016-11-23T20:43:35.000+00:00","committer_name":"Kyle
+        Macey","committer_email":"shout@kylemacey.com","committed_date":"2016-11-23T20:43:35.000+00:00"},{"id":"75d5f1a0a3f8c07806512a647d16d60c4cd1c36f","short_id":"75d5f1a0","title":"Merged
+        Fork PR","created_at":"2016-11-23T20:37:17.000+00:00","parent_ids":["3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd"],"message":"Merged
+        Fork PR","author_name":"Kyle Macey","author_email":"shout@kylemacey.com","authored_date":"2016-11-23T20:37:17.000+00:00","committer_name":"Kyle
+        Macey","committer_email":"shout@kylemacey.com","committed_date":"2016-11-23T20:37:17.000+00:00"},{"id":"3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd","short_id":"3a1811f3","title":"Merge
+        branch ''omniauth-login'' into ''master''\r","created_at":"2016-05-10T22:15:31.000+00:00","parent_ids":["a7291a05bb99bb755cdcaceb76b4f3d7f24837d5","220d5dc2582a49d694c503abdb8cf25bcdd81dce"],"message":"Merge
+        branch ''omniauth-login'' into ''master''\r\n\r\nNeed some hugo, more than
+        #4\r\n\r\nBig changes\r\n\r\nSee merge request !1","author_name":"Matt","author_email":"spraints@gmail.com","authored_date":"2016-05-10T22:15:31.000+00:00","committer_name":"Matt","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T22:15:31.000+00:00"},{"id":"220d5dc2582a49d694c503abdb8cf25bcdd81dce","short_id":"220d5dc2","title":"Need
+        some hugo","created_at":"2016-05-10T14:59:51.000-07:00","parent_ids":["a7291a05bb99bb755cdcaceb76b4f3d7f24837d5"],"message":"Need
+        some hugo\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-10T14:59:51.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T14:59:51.000-07:00"},{"id":"a7291a05bb99bb755cdcaceb76b4f3d7f24837d5","short_id":"a7291a05","title":"Bundle
+        for script/server","created_at":"2016-05-10T06:20:09.000-07:00","parent_ids":["601508f36f21effc729410facb8966b033311849"],"message":"Bundle
+        for script/server\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-10T06:20:09.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T06:20:09.000-07:00"},{"id":"601508f36f21effc729410facb8966b033311849","short_id":"601508f3","title":"Configure
+        stuff like omniauth","created_at":"2016-05-10T06:18:38.000-07:00","parent_ids":["495aee13351a83128d2aa9b79deaf0a51433b084"],"message":"Configure
+        stuff like omniauth\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-10T06:18:38.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T06:18:38.000-07:00"},{"id":"495aee13351a83128d2aa9b79deaf0a51433b084","short_id":"495aee13","title":"rails
+        new","created_at":"2016-05-10T06:10:39.000-07:00","parent_ids":["3dd4503f986cecec094ac734c9dc5d441bda722a"],"message":"rails
+        new\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-10T06:10:39.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T06:10:39.000-07:00"},{"id":"3dd4503f986cecec094ac734c9dc5d441bda722a","short_id":"3dd4503f","title":"There''s
+        gonna be a UI, so there''s gonna be rails","created_at":"2016-05-10T06:08:36.000-07:00","parent_ids":["1490680b9a193ff188eb0dff7281b29869c62937"],"message":"There''s
+        gonna be a UI, so there''s gonna be rails\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-10T06:08:06.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T06:08:36.000-07:00"},{"id":"1490680b9a193ff188eb0dff7281b29869c62937","short_id":"1490680b","title":"Choose
+        my scopes","created_at":"2016-05-10T06:06:10.000-07:00","parent_ids":["27c44637e863f719c071d961ab42a6afc041e034"],"message":"Choose
+        my scopes\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-10T06:06:10.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T06:06:10.000-07:00"},{"id":"27c44637e863f719c071d961ab42a6afc041e034","short_id":"27c44637","title":"Configure
+        oauth","created_at":"2016-05-10T06:00:27.000-07:00","parent_ids":["0b5f5672a032c7248140440609c73305f57b295b"],"message":"Configure
+        oauth\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-10T06:00:27.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T06:00:27.000-07:00"},{"id":"0b5f5672a032c7248140440609c73305f57b295b","short_id":"0b5f5672","title":"script/server
+        works!","created_at":"2016-05-10T05:40:26.000-07:00","parent_ids":["fe41a36d2a20203bfe56f5f5eb4f88854cde30ac"],"message":"script/server
+        works!\n\nbase-image is the stuff to build spraints/hugo-pages:latest. It''s
+        based\non heroku/ruby, except that it bundles without dev/test and it includes\nhugo.\n","author_name":"Matt
+        Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-10T05:40:26.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T05:40:26.000-07:00"},{"id":"fe41a36d2a20203bfe56f5f5eb4f88854cde30ac","short_id":"fe41a36d","title":"yoink","created_at":"2016-05-10T05:06:51.000-07:00","parent_ids":["0698f697f3f5f3ae9f9b72a2119debddb9758fc4"],"message":"yoink\n\nhttps://github.com/heroku/docker-ruby/blob/86199e7adf1ed147cb4db5d3a8a9f4c60eb61165/Dockerfile\n","author_name":"Matt
+        Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-10T05:06:51.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T05:06:51.000-07:00"},{"id":"0698f697f3f5f3ae9f9b72a2119debddb9758fc4","short_id":"0698f697","title":"Start
+        a server","created_at":"2016-05-10T04:38:46.000-07:00","parent_ids":["5a804fb3b11c7e80c7f18f5e16600cd981a3d8b0"],"message":"Start
+        a server\n\nThe docker image heroku/ruby bundles everything, but it should
+        skip dev\nand test. :(\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-10T04:38:46.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-10T04:38:46.000-07:00"},{"id":"5a804fb3b11c7e80c7f18f5e16600cd981a3d8b0","short_id":"5a804fb3","title":"Get
+        a web server running in the container","created_at":"2016-05-09T21:10:04.000-07:00","parent_ids":["2c194f4d32931c76c190a53bd2b8e82501108c26"],"message":"Get
+        a web server running in the container\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-09T21:10:04.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-09T21:10:04.000-07:00"},{"id":"2c194f4d32931c76c190a53bd2b8e82501108c26","short_id":"2c194f4d","title":"Get
+        docker-compose to build something","created_at":"2016-05-09T20:59:18.000-07:00","parent_ids":["0b43fd0466b4ac778fea61aae10dd83ea7b2d170"],"message":"Get
+        docker-compose to build something\n\nIt doesn''t quite run yet, though.\n","author_name":"Matt
+        Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-09T20:59:18.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-09T20:59:18.000-07:00"},{"id":"0b43fd0466b4ac778fea61aae10dd83ea7b2d170","short_id":"0b43fd04","title":"heroku
+        docker:init","created_at":"2016-05-09T20:50:53.000-07:00","parent_ids":["e0b12c09bb1bb56879324042ba27cb1c7d01c768"],"message":"heroku
+        docker:init\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-09T20:50:53.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-09T20:50:53.000-07:00"},{"id":"e0b12c09bb1bb56879324042ba27cb1c7d01c768","short_id":"e0b12c09","title":"Bootstrap
+        docker-machine","created_at":"2016-05-09T20:48:32.000-07:00","parent_ids":["ebd9f26d4ce651a97d9891c23f14500b79965769"],"message":"Bootstrap
+        docker-machine\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-09T20:48:32.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-09T20:48:32.000-07:00"},{"id":"ebd9f26d4ce651a97d9891c23f14500b79965769","short_id":"ebd9f26d","title":"Set
+        up the heroku toolbelt","created_at":"2016-05-09T20:38:03.000-07:00","parent_ids":["53f929fa562d085ad8337cec773961c8529d3ae1"],"message":"Set
+        up the heroku toolbelt\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-09T20:38:03.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-09T20:38:03.000-07:00"},{"id":"53f929fa562d085ad8337cec773961c8529d3ae1","short_id":"53f929fa","title":"Install
+        docker, docker-machine, docker-compose","created_at":"2016-05-09T20:31:29.000-07:00","parent_ids":["5ca5d5f2a18af13de11038c92cc652af82054c5b"],"message":"Install
+        docker, docker-machine, docker-compose\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-09T20:31:29.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-09T20:31:29.000-07:00"},{"id":"5ca5d5f2a18af13de11038c92cc652af82054c5b","short_id":"5ca5d5f2","title":"Sketch
+        an app.json","created_at":"2016-05-09T20:26:05.000-07:00","parent_ids":["d443c0733cff4500ccccb3f5c7f9c4120d4c1553"],"message":"Sketch
+        an app.json\n","author_name":"Matt Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-09T20:26:05.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-09T20:26:05.000-07:00"},{"id":"d443c0733cff4500ccccb3f5c7f9c4120d4c1553","short_id":"d443c073","title":"Aspirational","created_at":"2016-05-09T19:46:39.000-07:00","parent_ids":[],"message":"Aspirational\n","author_name":"Matt
+        Burke","author_email":"spraints@gmail.com","authored_date":"2016-05-09T19:46:39.000-07:00","committer_name":"Matt
+        Burke","committer_email":"spraints@gmail.com","committed_date":"2016-05-09T19:46:39.000-07:00"}]'
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:34 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:34 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Vary:
+      - Origin
+      X-Request-Id:
+      - e44b7405-6b4e-4ef3-a415-0dd1fc141e84
+      X-Runtime:
+      - '0.165348'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:34 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/fc40f8230aab1a10e16c70b2706e2d2a6164eea0/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:35 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/fc40f8230aab1a10e16c70b2706e2d2a6164eea0/comments?id=1169162&page=1&per_page=100&sha=fc40f8230aab1a10e16c70b2706e2d2a6164eea0>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/fc40f8230aab1a10e16c70b2706e2d2a6164eea0/comments?id=1169162&page=0&per_page=100&sha=fc40f8230aab1a10e16c70b2706e2d2a6164eea0>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 4330975c-c316-4108-a833-8f50c9b955aa
+      X-Runtime:
+      - '0.245472'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:35 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/75d5f1a0a3f8c07806512a647d16d60c4cd1c36f/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/75d5f1a0a3f8c07806512a647d16d60c4cd1c36f/comments?id=1169162&page=1&per_page=100&sha=75d5f1a0a3f8c07806512a647d16d60c4cd1c36f>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/75d5f1a0a3f8c07806512a647d16d60c4cd1c36f/comments?id=1169162&page=0&per_page=100&sha=75d5f1a0a3f8c07806512a647d16d60c4cd1c36f>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - b0aa3faf-c1d0-401c-a523-706809f85fef
+      X-Runtime:
+      - '0.370335'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:35 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd/comments?id=1169162&page=1&per_page=100&sha=3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd/comments?id=1169162&page=0&per_page=100&sha=3a1811f3cb96e9bc426f6ee3544a2cf4f7d5f3fd>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - a5194d6b-2662-40f9-80e0-4525fed86cd7
+      X-Runtime:
+      - '0.150976'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:36 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/220d5dc2582a49d694c503abdb8cf25bcdd81dce/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '430'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"2415dc5a44be6aa2e4a7232951580f36"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/220d5dc2582a49d694c503abdb8cf25bcdd81dce/comments?id=1169162&page=1&per_page=100&sha=220d5dc2582a49d694c503abdb8cf25bcdd81dce>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/220d5dc2582a49d694c503abdb8cf25bcdd81dce/comments?id=1169162&page=1&per_page=100&sha=220d5dc2582a49d694c503abdb8cf25bcdd81dce>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - f1311cda-e6bd-4140-8b0e-c4e59f003aea
+      X-Runtime:
+      - '0.182196'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"note":"is this necessary?\r\n\r\n[testFile.txt](/uploads/af7fcacfc5d69fdcf63a8f04048a106f/testFile.txt)\r\n\r\n\r\n\r\n","path":"Brewfile","line":5,"line_type":null,"author":{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/lizzhale"},"created_at":"2016-05-10T22:23:50.501Z"}]'
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:36 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=lizzhale
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '213'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"3249c36c75bc4ef750124820b232d83b"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=lizzhale>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=lizzhale>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - eb49760b-2f3c-4424-bd71-5da747c07677
+      X-Runtime:
+      - '0.125886'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/lizzhale"}]'
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:36 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/a7291a05bb99bb755cdcaceb76b4f3d7f24837d5/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/a7291a05bb99bb755cdcaceb76b4f3d7f24837d5/comments?id=1169162&page=1&per_page=100&sha=a7291a05bb99bb755cdcaceb76b4f3d7f24837d5>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/a7291a05bb99bb755cdcaceb76b4f3d7f24837d5/comments?id=1169162&page=0&per_page=100&sha=a7291a05bb99bb755cdcaceb76b4f3d7f24837d5>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - fe876600-b677-4462-ba9a-fbfd74a41681
+      X-Runtime:
+      - '0.165932'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:37 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/601508f36f21effc729410facb8966b033311849/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/601508f36f21effc729410facb8966b033311849/comments?id=1169162&page=1&per_page=100&sha=601508f36f21effc729410facb8966b033311849>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/601508f36f21effc729410facb8966b033311849/comments?id=1169162&page=0&per_page=100&sha=601508f36f21effc729410facb8966b033311849>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 27981a46-3854-43ca-b55b-1b3d93ab6177
+      X-Runtime:
+      - '0.169964'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:37 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/495aee13351a83128d2aa9b79deaf0a51433b084/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/495aee13351a83128d2aa9b79deaf0a51433b084/comments?id=1169162&page=1&per_page=100&sha=495aee13351a83128d2aa9b79deaf0a51433b084>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/495aee13351a83128d2aa9b79deaf0a51433b084/comments?id=1169162&page=0&per_page=100&sha=495aee13351a83128d2aa9b79deaf0a51433b084>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 37138ba9-d9f1-4979-a924-eb3f470bfc98
+      X-Runtime:
+      - '0.211365'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:38 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/3dd4503f986cecec094ac734c9dc5d441bda722a/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/3dd4503f986cecec094ac734c9dc5d441bda722a/comments?id=1169162&page=1&per_page=100&sha=3dd4503f986cecec094ac734c9dc5d441bda722a>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/3dd4503f986cecec094ac734c9dc5d441bda722a/comments?id=1169162&page=0&per_page=100&sha=3dd4503f986cecec094ac734c9dc5d441bda722a>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 0f144bdd-8536-4b9f-b6a3-cf5c4c00fb10
+      X-Runtime:
+      - '0.254330'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:38 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/1490680b9a193ff188eb0dff7281b29869c62937/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/1490680b9a193ff188eb0dff7281b29869c62937/comments?id=1169162&page=1&per_page=100&sha=1490680b9a193ff188eb0dff7281b29869c62937>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/1490680b9a193ff188eb0dff7281b29869c62937/comments?id=1169162&page=0&per_page=100&sha=1490680b9a193ff188eb0dff7281b29869c62937>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - e4980334-5f53-4fe6-9353-952d86dbddf2
+      X-Runtime:
+      - '0.249029'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:39 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/27c44637e863f719c071d961ab42a6afc041e034/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/27c44637e863f719c071d961ab42a6afc041e034/comments?id=1169162&page=1&per_page=100&sha=27c44637e863f719c071d961ab42a6afc041e034>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/27c44637e863f719c071d961ab42a6afc041e034/comments?id=1169162&page=0&per_page=100&sha=27c44637e863f719c071d961ab42a6afc041e034>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 84ae7629-022a-49be-a7cf-25bb5b8680a6
+      X-Runtime:
+      - '0.180660'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:39 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/0b5f5672a032c7248140440609c73305f57b295b/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:40 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/0b5f5672a032c7248140440609c73305f57b295b/comments?id=1169162&page=1&per_page=100&sha=0b5f5672a032c7248140440609c73305f57b295b>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/0b5f5672a032c7248140440609c73305f57b295b/comments?id=1169162&page=0&per_page=100&sha=0b5f5672a032c7248140440609c73305f57b295b>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - aa6372b6-184d-4489-95ae-d826e69c0760
+      X-Runtime:
+      - '0.181722'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:39 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/fe41a36d2a20203bfe56f5f5eb4f88854cde30ac/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:40 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/fe41a36d2a20203bfe56f5f5eb4f88854cde30ac/comments?id=1169162&page=1&per_page=100&sha=fe41a36d2a20203bfe56f5f5eb4f88854cde30ac>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/fe41a36d2a20203bfe56f5f5eb4f88854cde30ac/comments?id=1169162&page=0&per_page=100&sha=fe41a36d2a20203bfe56f5f5eb4f88854cde30ac>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 4ee45452-ab4f-4a12-8fd3-dc383802be62
+      X-Runtime:
+      - '0.326408'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:40 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/0698f697f3f5f3ae9f9b72a2119debddb9758fc4/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/0698f697f3f5f3ae9f9b72a2119debddb9758fc4/comments?id=1169162&page=1&per_page=100&sha=0698f697f3f5f3ae9f9b72a2119debddb9758fc4>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/0698f697f3f5f3ae9f9b72a2119debddb9758fc4/comments?id=1169162&page=0&per_page=100&sha=0698f697f3f5f3ae9f9b72a2119debddb9758fc4>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - b4fe8a41-6f0f-4c62-adb8-1bf9c23bf438
+      X-Runtime:
+      - '0.248345'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:41 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/5a804fb3b11c7e80c7f18f5e16600cd981a3d8b0/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/5a804fb3b11c7e80c7f18f5e16600cd981a3d8b0/comments?id=1169162&page=1&per_page=100&sha=5a804fb3b11c7e80c7f18f5e16600cd981a3d8b0>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/5a804fb3b11c7e80c7f18f5e16600cd981a3d8b0/comments?id=1169162&page=0&per_page=100&sha=5a804fb3b11c7e80c7f18f5e16600cd981a3d8b0>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 79956d91-e009-4da5-bd55-b36f3fbb8224
+      X-Runtime:
+      - '0.195896'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:41 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/2c194f4d32931c76c190a53bd2b8e82501108c26/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:42 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/2c194f4d32931c76c190a53bd2b8e82501108c26/comments?id=1169162&page=1&per_page=100&sha=2c194f4d32931c76c190a53bd2b8e82501108c26>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/2c194f4d32931c76c190a53bd2b8e82501108c26/comments?id=1169162&page=0&per_page=100&sha=2c194f4d32931c76c190a53bd2b8e82501108c26>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - b4bca800-c3b0-48cd-8df0-1df3a64e7230
+      X-Runtime:
+      - '0.155632'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:41 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/0b43fd0466b4ac778fea61aae10dd83ea7b2d170/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:42 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/0b43fd0466b4ac778fea61aae10dd83ea7b2d170/comments?id=1169162&page=1&per_page=100&sha=0b43fd0466b4ac778fea61aae10dd83ea7b2d170>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/0b43fd0466b4ac778fea61aae10dd83ea7b2d170/comments?id=1169162&page=0&per_page=100&sha=0b43fd0466b4ac778fea61aae10dd83ea7b2d170>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - ec8a2b9c-4e49-49a6-ba60-6629d4ece611
+      X-Runtime:
+      - '0.212614'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:42 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/e0b12c09bb1bb56879324042ba27cb1c7d01c768/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:43 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/e0b12c09bb1bb56879324042ba27cb1c7d01c768/comments?id=1169162&page=1&per_page=100&sha=e0b12c09bb1bb56879324042ba27cb1c7d01c768>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/e0b12c09bb1bb56879324042ba27cb1c7d01c768/comments?id=1169162&page=0&per_page=100&sha=e0b12c09bb1bb56879324042ba27cb1c7d01c768>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 7fc3bfed-84ea-4568-acb7-aa8bbb910b55
+      X-Runtime:
+      - '0.204492'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:42 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/ebd9f26d4ce651a97d9891c23f14500b79965769/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:43 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '386'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"b460a7dc8c9dac19a6d3c5b6f6f1f2cc"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/ebd9f26d4ce651a97d9891c23f14500b79965769/comments?id=1169162&page=1&per_page=100&sha=ebd9f26d4ce651a97d9891c23f14500b79965769>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/ebd9f26d4ce651a97d9891c23f14500b79965769/comments?id=1169162&page=1&per_page=100&sha=ebd9f26d4ce651a97d9891c23f14500b79965769>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - fd8f021b-14a0-4359-b466-b2148ee40384
+      X-Runtime:
+      - '0.199928'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"note":"nit pick: can we standardize on single vs. double quotes?
+        ","path":"script/bootstrap","line":15,"line_type":"new","author":{"name":"Lizz","username":"lizzhale","id":529949,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/lizzhale"},"created_at":"2016-05-10T22:24:48.431Z"}]'
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:43 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/53f929fa562d085ad8337cec773961c8529d3ae1/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:43 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/53f929fa562d085ad8337cec773961c8529d3ae1/comments?id=1169162&page=1&per_page=100&sha=53f929fa562d085ad8337cec773961c8529d3ae1>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/53f929fa562d085ad8337cec773961c8529d3ae1/comments?id=1169162&page=0&per_page=100&sha=53f929fa562d085ad8337cec773961c8529d3ae1>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - dd6cfbb9-a9d5-4715-ab2c-b2eff02a8c58
+      X-Runtime:
+      - '0.180526'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:43 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/5ca5d5f2a18af13de11038c92cc652af82054c5b/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:44 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/5ca5d5f2a18af13de11038c92cc652af82054c5b/comments?id=1169162&page=1&per_page=100&sha=5ca5d5f2a18af13de11038c92cc652af82054c5b>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/5ca5d5f2a18af13de11038c92cc652af82054c5b/comments?id=1169162&page=0&per_page=100&sha=5ca5d5f2a18af13de11038c92cc652af82054c5b>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 86d3c327-df3c-4d6e-a320-89ae220d3690
+      X-Runtime:
+      - '0.308156'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:44 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/repository/commits/d443c0733cff4500ccccb3f5c7f9c4120d4c1553/comments?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:44 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '478'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"5050bc1352877d5fdff3a2bba1796137"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1169162/repository/commits/d443c0733cff4500ccccb3f5c7f9c4120d4c1553/comments?id=1169162&page=1&per_page=100&sha=d443c0733cff4500ccccb3f5c7f9c4120d4c1553>;
+        rel="first", <https://gitlab.com/api/v3/projects/1169162/repository/commits/d443c0733cff4500ccccb3f5c7f9c4120d4c1553/comments?id=1169162&page=1&per_page=100&sha=d443c0733cff4500ccccb3f5c7f9c4120d4c1553>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - be8bc762-33cd-45e7-8243-2c07dd03bea1
+      X-Runtime:
+      - '0.144175'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"note":"Not sure if we''ll ever need this but here is the button
+        svg we''re linking to for posterity. [button.svg](/uploads/fa9c443dd87f1a04820690c2b0ebd886/button.svg)","path":null,"line":null,"line_type":null,"author":{"name":"Jon
+        Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/jonmagic"},"created_at":"2016-05-10T22:01:08.141Z"}]'
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:44 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=jonmagic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Apr 2017 21:15:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '218'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"ca6e9eab8324ba4eb25f7a78100dc4d6"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=jonmagic>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=jonmagic>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 2a116d5d-5a5d-4051-af4b-12e486a65797
+      X-Runtime:
+      - '0.167751'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Jon Magic","username":"jonmagic","id":529946,"state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/jonmagic"}]'
+    http_version: 
+  recorded_at: Tue, 11 Apr 2017 21:15:44 GMT
+recorded_with: VCR 3.0.3

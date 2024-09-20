@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1123699/hooks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 07 Jul 2016 21:18:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '549'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"226ddbf554e7e0de84262400893fd25b"
+      Link:
+      - <https://gitlab.com/api/v3/projects/1123699/hooks?id=1123699&page=1&per_page=20>;
+        rel="first", <https://gitlab.com/api/v3/projects/1123699/hooks?id=1123699&page=1&per_page=20>;
+        rel="last"
+      Status:
+      - 200 OK
+      Vary:
+      - Origin
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 2e888a85-07a2-4603-b69a-84b21a500ab9
+      X-Runtime:
+      - '0.094548'
+      X-Total:
+      - '2'
+      X-Total-Pages:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":50708,"url":"http://requestb.in/1bwo2mf1","created_at":"2016-07-07T20:53:40.793Z","project_id":1123699,"push_events":true,"issues_events":false,"merge_requests_events":false,"tag_push_events":true,"note_events":false,"build_events":true,"enable_ssl_verification":true},{"id":50707,"url":"http://requestb.in/v3fo7mv3","created_at":"2016-07-07T20:53:21.556Z","project_id":1123699,"push_events":true,"issues_events":true,"merge_requests_events":true,"tag_push_events":true,"note_events":true,"build_events":true,"enable_ssl_verification":false}]'
+    http_version: 
+  recorded_at: Thu, 07 Jul 2016 21:18:39 GMT
+recorded_with: VCR 3.0.1

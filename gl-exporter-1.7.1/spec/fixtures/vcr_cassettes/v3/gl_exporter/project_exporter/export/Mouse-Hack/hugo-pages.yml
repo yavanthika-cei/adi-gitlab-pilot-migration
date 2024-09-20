@@ -1,0 +1,1087 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=Mouse-Hack
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=Mouse-Hack>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=Mouse-Hack>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 0ac037ef-5356-40d6-ba11-cd65b22d56a9
+      X-Runtime:
+      - '0.081333'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '1'
+      Ratelimit-Remaining:
+      - '599'
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:33 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/groups/Mouse-Hack
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '12172'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"1827bd2d09ee29414d13821bd563f22e"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 3aa81c08-a0f0-4d84-bc73-1cbe9a674145
+      X-Runtime:
+      - '2.364410'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '2'
+      Ratelimit-Remaining:
+      - '598'
+    body:
+      encoding: UTF-8
+      string: '{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","description":"","visibility_level":20,"ldap_cn":null,"ldap_access":null,"lfs_enabled":true,"avatar_url":null,"web_url":"https://gitlab.com/groups/Mouse-Hack","request_access_enabled":true,"full_name":"Mouse-Hack","full_path":"Mouse-Hack","parent_id":null,"projects":[{"id":4195628,"description":"","default_branch":"master","tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:Mouse-Hack/no-merge-requests.git","http_url_to_repo":"https://gitlab.com/Mouse-Hack/no-merge-requests.git","web_url":"https://gitlab.com/Mouse-Hack/no-merge-requests","name":"no-merge-requests","name_with_namespace":"Mouse-Hack
+        / no-merge-requests","path":"no-merge-requests","path_with_namespace":"Mouse-Hack/no-merge-requests","resolve_outdated_diff_discussions":false,"container_registry_enabled":true,"issues_enabled":false,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":true,"created_at":"2017-09-20T15:43:38.170Z","last_activity_at":"2017-09-20T15:43:38.170Z","shared_runners_enabled":true,"lfs_enabled":true,"creator_id":1238984,"namespace":{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","kind":"group","full_path":"Mouse-Hack","parent_id":null,"members_count_with_descendants":11,"plan":"early_adopter"},"avatar_url":null,"star_count":0,"forks_count":0,"public_builds":true,"shared_with_groups":[],"only_allow_merge_if_build_succeeds":false,"request_access_enabled":false,"only_allow_merge_if_all_discussions_are_resolved":false,"approvals_before_merge":0},{"id":4157385,"description":"Angular
+        Web Application for Annotating PDF Documents Service wrapper around Abbyy
+        1 SDK to provide OCR mississippi intelligence food","default_branch":"master","tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:Mouse-Hack/double-letter-test.git","http_url_to_repo":"https://gitlab.com/Mouse-Hack/double-letter-test.git","web_url":"https://gitlab.com/Mouse-Hack/double-letter-test","name":"double-letter-test","name_with_namespace":"Mouse-Hack
+        / double-letter-test","path":"double-letter-test","path_with_namespace":"Mouse-Hack/double-letter-test","resolve_outdated_diff_discussions":false,"container_registry_enabled":true,"issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":true,"created_at":"2017-09-15T14:47:11.501Z","last_activity_at":"2017-09-15T14:47:11.501Z","shared_runners_enabled":true,"lfs_enabled":true,"creator_id":1238984,"namespace":{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","kind":"group","full_path":"Mouse-Hack","parent_id":null,"members_count_with_descendants":11,"plan":"early_adopter"},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":0,"public_builds":true,"shared_with_groups":[],"only_allow_merge_if_build_succeeds":false,"request_access_enabled":false,"only_allow_merge_if_all_discussions_are_resolved":false,"approvals_before_merge":0},{"id":3925428,"description":"Test
+        project that includes a wiki","default_branch":"master","tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:Mouse-Hack/wiki-test.git","http_url_to_repo":"https://gitlab.com/Mouse-Hack/wiki-test.git","web_url":"https://gitlab.com/Mouse-Hack/wiki-test","name":"wiki-test","name_with_namespace":"Mouse-Hack
+        / wiki-test","path":"wiki-test","path_with_namespace":"Mouse-Hack/wiki-test","resolve_outdated_diff_discussions":null,"container_registry_enabled":true,"issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":true,"created_at":"2017-08-15T14:36:41.511Z","last_activity_at":"2017-09-14T17:51:43.778Z","shared_runners_enabled":true,"lfs_enabled":true,"creator_id":1238984,"namespace":{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","kind":"group","full_path":"Mouse-Hack","parent_id":null,"members_count_with_descendants":11,"plan":"early_adopter"},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":2,"public_builds":true,"shared_with_groups":[],"only_allow_merge_if_build_succeeds":false,"request_access_enabled":false,"only_allow_merge_if_all_discussions_are_resolved":false,"approvals_before_merge":0},{"id":1169162,"description":"Wanna
+        use something other than jekyll? Try this one weird trick. er, actually a
+        bunch of tricks, glued together.","default_branch":"master","tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:Mouse-Hack/hugo-pages.git","http_url_to_repo":"https://gitlab.com/Mouse-Hack/hugo-pages.git","web_url":"https://gitlab.com/Mouse-Hack/hugo-pages","name":"hugo-pages","name_with_namespace":"Mouse-Hack
+        / hugo-pages","path":"hugo-pages","path_with_namespace":"Mouse-Hack/hugo-pages","resolve_outdated_diff_discussions":null,"container_registry_enabled":null,"issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-05-10T21:15:14.616Z","last_activity_at":"2017-08-22T20:01:05.186Z","shared_runners_enabled":true,"lfs_enabled":true,"creator_id":142189,"namespace":{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","kind":"group","full_path":"Mouse-Hack","parent_id":null,"members_count_with_descendants":11,"plan":"early_adopter"},"avatar_url":null,"star_count":0,"forks_count":1,"open_issues_count":6,"public_builds":true,"shared_with_groups":[{"group_id":627189,"group_name":"Mouse-Hack","group_access_level":30}],"only_allow_merge_if_build_succeeds":false,"request_access_enabled":true,"only_allow_merge_if_all_discussions_are_resolved":null,"approvals_before_merge":0},{"id":1316735,"description":"","default_branch":"tmp","tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:Mouse-Hack/many-commits.git","http_url_to_repo":"https://gitlab.com/Mouse-Hack/many-commits.git","web_url":"https://gitlab.com/Mouse-Hack/many-commits","name":"many-commits","name_with_namespace":"Mouse-Hack
+        / many-commits","path":"many-commits","path_with_namespace":"Mouse-Hack/many-commits","resolve_outdated_diff_discussions":null,"container_registry_enabled":true,"issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-06-20T14:33:23.998Z","last_activity_at":"2017-08-08T14:43:44.938Z","shared_runners_enabled":true,"lfs_enabled":true,"creator_id":414903,"namespace":{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","kind":"group","full_path":"Mouse-Hack","parent_id":null,"members_count_with_descendants":11,"plan":"early_adopter"},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":500,"public_builds":true,"shared_with_groups":[],"only_allow_merge_if_build_succeeds":false,"request_access_enabled":true,"only_allow_merge_if_all_discussions_are_resolved":false,"approvals_before_merge":0},{"id":3795166,"description":"testing
+        lock proj","default_branch":"master","tag_list":[],"public":false,"archived":true,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:Mouse-Hack/test-lock.git","http_url_to_repo":"https://gitlab.com/Mouse-Hack/test-lock.git","web_url":"https://gitlab.com/Mouse-Hack/test-lock","name":"test-lock","name_with_namespace":"Mouse-Hack
+        / test-lock","path":"test-lock","path_with_namespace":"Mouse-Hack/test-lock","resolve_outdated_diff_discussions":null,"container_registry_enabled":true,"issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":true,"created_at":"2017-07-27T17:13:22.497Z","last_activity_at":"2017-07-27T17:13:22.497Z","shared_runners_enabled":true,"lfs_enabled":true,"creator_id":1238984,"namespace":{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","kind":"group","full_path":"Mouse-Hack","parent_id":null,"members_count_with_descendants":11,"plan":"early_adopter"},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":0,"public_builds":true,"shared_with_groups":[],"only_allow_merge_if_build_succeeds":false,"request_access_enabled":false,"only_allow_merge_if_all_discussions_are_resolved":false,"approvals_before_merge":0},{"id":2192203,"description":"","default_branch":null,"tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:Mouse-Hack/brand-new.git","http_url_to_repo":"https://gitlab.com/Mouse-Hack/brand-new.git","web_url":"https://gitlab.com/Mouse-Hack/brand-new","name":"brand-new","name_with_namespace":"Mouse-Hack
+        / brand-new","path":"brand-new","path_with_namespace":"Mouse-Hack/brand-new","resolve_outdated_diff_discussions":null,"container_registry_enabled":true,"issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-12-20T16:07:15.741Z","last_activity_at":"2016-12-20T16:07:15.741Z","shared_runners_enabled":true,"lfs_enabled":true,"creator_id":414903,"namespace":{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","kind":"group","full_path":"Mouse-Hack","parent_id":null,"members_count_with_descendants":11,"plan":"early_adopter"},"avatar_url":null,"star_count":0,"forks_count":0,"open_issues_count":0,"public_builds":true,"shared_with_groups":[],"only_allow_merge_if_build_succeeds":false,"request_access_enabled":false,"only_allow_merge_if_all_discussions_are_resolved":false,"approvals_before_merge":0},{"id":2179242,"description":"","default_branch":"master","tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:Mouse-Hack/disable-features.git","http_url_to_repo":"https://gitlab.com/Mouse-Hack/disable-features.git","web_url":"https://gitlab.com/Mouse-Hack/disable-features","name":"disable-features","name_with_namespace":"Mouse-Hack
+        / disable-features","path":"disable-features","path_with_namespace":"Mouse-Hack/disable-features","resolve_outdated_diff_discussions":null,"container_registry_enabled":true,"issues_enabled":false,"merge_requests_enabled":true,"wiki_enabled":false,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-12-17T20:08:31.270Z","last_activity_at":"2017-07-19T19:01:21.564Z","shared_runners_enabled":true,"lfs_enabled":true,"creator_id":414903,"namespace":{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","kind":"group","full_path":"Mouse-Hack","parent_id":null,"members_count_with_descendants":11,"plan":"early_adopter"},"avatar_url":null,"star_count":0,"forks_count":0,"public_builds":true,"shared_with_groups":[],"only_allow_merge_if_build_succeeds":false,"request_access_enabled":false,"only_allow_merge_if_all_discussions_are_resolved":false,"approvals_before_merge":0}],"shared_projects":[{"id":1169162,"description":"Wanna
+        use something other than jekyll? Try this one weird trick. er, actually a
+        bunch of tricks, glued together.","default_branch":"master","tag_list":[],"public":false,"archived":false,"visibility_level":0,"ssh_url_to_repo":"git@gitlab.com:Mouse-Hack/hugo-pages.git","http_url_to_repo":"https://gitlab.com/Mouse-Hack/hugo-pages.git","web_url":"https://gitlab.com/Mouse-Hack/hugo-pages","name":"hugo-pages","name_with_namespace":"Mouse-Hack
+        / hugo-pages","path":"hugo-pages","path_with_namespace":"Mouse-Hack/hugo-pages","resolve_outdated_diff_discussions":null,"container_registry_enabled":null,"issues_enabled":true,"merge_requests_enabled":true,"wiki_enabled":true,"builds_enabled":true,"snippets_enabled":false,"created_at":"2016-05-10T21:15:14.616Z","last_activity_at":"2017-08-22T20:01:05.186Z","shared_runners_enabled":true,"lfs_enabled":true,"creator_id":142189,"namespace":{"id":627189,"name":"Mouse-Hack","path":"Mouse-Hack","kind":"group","full_path":"Mouse-Hack","parent_id":null,"members_count_with_descendants":11,"plan":"early_adopter"},"avatar_url":null,"star_count":0,"forks_count":1,"open_issues_count":6,"public_builds":true,"shared_with_groups":[{"group_id":627189,"group_name":"Mouse-Hack","group_access_level":30}],"only_allow_merge_if_build_succeeds":false,"request_access_enabled":true,"only_allow_merge_if_all_discussions_are_resolved":null,"approvals_before_merge":0}]}'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:37 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/groups/Mouse-Hack/members?page=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2795'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"334e053901f69b570fec936bf959b469"
+      Link:
+      - <https://gitlab.com/api/v3/groups/Mouse-Hack/members?id=Mouse-Hack&page=1&per_page=100>;
+        rel="first", <https://gitlab.com/api/v3/groups/Mouse-Hack/members?id=Mouse-Hack&page=1&per_page=100>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '100'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 6f65c429-b425-43a0-bcc2-6701e3978937
+      X-Runtime:
+      - '0.265077'
+      X-Total:
+      - '11'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '3'
+      Ratelimit-Remaining:
+      - '597'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjE1MDUzNDAsIm5hbWUiOiJTdGVmYW4gU3TDtmx6bGUgKHN0b2UpIiwidXNlcm5hbWUiOiJzdG9lIiwic3RhdGUiOiJhY3RpdmUiLCJhdmF0YXJfdXJsIjoiaHR0cHM6Ly9zZWN1cmUuZ3JhdmF0YXIuY29tL2F2YXRhci9iZTkwN2EwYjVhYzg5OGNhMGY2OTAxN2U3YTZjMzAwNT9zPTgwXHUwMDI2ZD1pZGVudGljb24iLCJ3ZWJfdXJsIjoiaHR0cHM6Ly9naXRsYWIuY29tL3N0b2UiLCJhY2Nlc3NfbGV2ZWwiOjUwLCJleHBpcmVzX2F0IjpudWxsfSx7ImlkIjoxNDc3NjIxLCJuYW1lIjoiTWF4d2VsbCBQcmF5IiwidXNlcm5hbWUiOiJzeW50aGVhZCIsInN0YXRlIjoiYWN0aXZlIiwiYXZhdGFyX3VybCI6Imh0dHBzOi8vZ2wtc3RhdGljLmdsb2JhbC5zc2wuZmFzdGx5Lm5ldC91cGxvYWRzLy0vc3lzdGVtL3VzZXIvYXZhdGFyLzE0Nzc2MjEvYXZhdGFyLnBuZyIsIndlYl91cmwiOiJodHRwczovL2dpdGxhYi5jb20vc3ludGhlYWQiLCJhY2Nlc3NfbGV2ZWwiOjUwLCJleHBpcmVzX2F0IjpudWxsfSx7ImlkIjoxNDc0MDExLCJuYW1lIjoiSmVmZiBKZXd0dCIsInVzZXJuYW1lIjoiamtqZXdldHQiLCJzdGF0ZSI6ImFjdGl2ZSIsImF2YXRhcl91cmwiOiJodHRwczovL3NlY3VyZS5ncmF2YXRhci5jb20vYXZhdGFyL2E2ZGY3ZmFlZjkwM2U2OGNjMmZiYmIwMzE5NWU1ZWI0P3M9ODBcdTAwMjZkPWlkZW50aWNvbiIsIndlYl91cmwiOiJodHRwczovL2dpdGxhYi5jb20vamtqZXdldHQiLCJhY2Nlc3NfbGV2ZWwiOjEwLCJleHBpcmVzX2F0IjpudWxsfSx7ImlkIjoxMjkyMDg4LCJuYW1lIjoiSmFtZXMgR2FyY2lhIiwidXNlcm5hbWUiOiJjb2xvc3N1czkiLCJzdGF0ZSI6ImFjdGl2ZSIsImF2YXRhcl91cmwiOiJodHRwczovL3NlY3VyZS5ncmF2YXRhci5jb20vYXZhdGFyLzFiMTc0YTA2MDc5NmM1ODNiMTFhMWZiYWYxYTBmOWFmP3M9ODBcdTAwMjZkPWlkZW50aWNvbiIsIndlYl91cmwiOiJodHRwczovL2dpdGxhYi5jb20vY29sb3NzdXM5IiwiYWNjZXNzX2xldmVsIjo1MCwiZXhwaXJlc19hdCI6bnVsbH0seyJpZCI6NDE3MDAxLCJuYW1lIjoiTWF0dCIsInVzZXJuYW1lIjoibWF0dGNhbnRzdG9wIiwic3RhdGUiOiJhY3RpdmUiLCJhdmF0YXJfdXJsIjoiaHR0cHM6Ly9zZWN1cmUuZ3JhdmF0YXIuY29tL2F2YXRhci85YzFmYjZjYjlkNTRjZTM2YTg0Y2NhMGFhNDU2N2VhMz9zPTgwXHUwMDI2ZD1pZGVudGljb24iLCJ3ZWJfdXJsIjoiaHR0cHM6Ly9naXRsYWIuY29tL21hdHRjYW50c3RvcCIsImFjY2Vzc19sZXZlbCI6MzAsImV4cGlyZXNfYXQiOm51bGx9LHsiaWQiOjEyMzg5ODQsIm5hbWUiOiJEYW5pZWwgUGVyZXoiLCJ1c2VybmFtZSI6ImRwbWV4NDUyNyIsInN0YXRlIjoiYWN0aXZlIiwiYXZhdGFyX3VybCI6Imh0dHBzOi8vc2VjdXJlLmdyYXZhdGFyLmNvbS9hdmF0YXIvNDczMzhjYjZlYTFjODRiZmQwYmJhZmQ2YTEyOThmM2Q/cz04MFx1MDAyNmQ9aWRlbnRpY29uIiwid2ViX3VybCI6Imh0dHBzOi8vZ2l0bGFiLmNvbS9kcG1leDQ1MjciLCJhY2Nlc3NfbGV2ZWwiOjUwLCJleHBpcmVzX2F0IjpudWxsfSx7ImlkIjo0MTQ5MDMsIm5hbWUiOiJLeWxlIE1hY2V5IiwidXNlcm5hbWUiOiJreWxlbWFjZXkiLCJzdGF0ZSI6ImFjdGl2ZSIsImF2YXRhcl91cmwiOiJodHRwczovL3NlY3VyZS5ncmF2YXRhci5jb20vYXZhdGFyL2U3YmMzY2UxZGJiMGZjYWE5YmIwMGJmMTA2Mjg1MjZlP3M9ODBcdTAwMjZkPWlkZW50aWNvbiIsIndlYl91cmwiOiJodHRwczovL2dpdGxhYi5jb20va3lsZW1hY2V5IiwiYWNjZXNzX2xldmVsIjo1MCwiZXhwaXJlc19hdCI6bnVsbH0seyJpZCI6MTQyMTg5LCJuYW1lIjoiTWF0dCIsInVzZXJuYW1lIjoic3ByYWludHMiLCJzdGF0ZSI6ImFjdGl2ZSIsImF2YXRhcl91cmwiOiJodHRwczovL3NlY3VyZS5ncmF2YXRhci5jb20vYXZhdGFyLzBiZjIwOGVlYmRhYjdjNWQxNjE1MmY3MGExZWU4MzdmP3M9ODBcdTAwMjZkPWlkZW50aWNvbiIsIndlYl91cmwiOiJodHRwczovL2dpdGxhYi5jb20vc3ByYWludHMiLCJhY2Nlc3NfbGV2ZWwiOjUwLCJleHBpcmVzX2F0IjpudWxsfSx7ImlkIjo1Mjk5NDYsIm5hbWUiOiJKb24gTWFnaWMiLCJ1c2VybmFtZSI6Impvbm1hZ2ljIiwic3RhdGUiOiJhY3RpdmUiLCJhdmF0YXJfdXJsIjoiaHR0cHM6Ly9zZWN1cmUuZ3JhdmF0YXIuY29tL2F2YXRhci83MDY0YWQ0MzgyNDZhMDI4MDljODViY2Q5MmNiNWYzZj9zPTgwXHUwMDI2ZD1pZGVudGljb24iLCJ3ZWJfdXJsIjoiaHR0cHM6Ly9naXRsYWIuY29tL2pvbm1hZ2ljIiwiYWNjZXNzX2xldmVsIjozMCwiZXhwaXJlc19hdCI6bnVsbH0seyJpZCI6NTI5OTQ5LCJuYW1lIjoiTGl6eiIsInVzZXJuYW1lIjoibGl6emhhbGUiLCJzdGF0ZSI6ImFjdGl2ZSIsImF2YXRhcl91cmwiOiJodHRwczovL3NlY3VyZS5ncmF2YXRhci5jb20vYXZhdGFyL2QzNmNkYjkzZDBmODViNWQ3Yjc2YTE4MzgzNGQ0MzUwP3M9ODBcdTAwMjZkPWlkZW50aWNvbiIsIndlYl91cmwiOiJodHRwczovL2dpdGxhYi5jb20vbGl6emhhbGUiLCJhY2Nlc3NfbGV2ZWwiOjIwLCJleHBpcmVzX2F0IjpudWxsfSx7ImlkIjo0NzEyNSwibmFtZSI6IkxpenogSGFsZSIsInVzZXJuYW1lIjoiZWhhbGUiLCJzdGF0ZSI6ImFjdGl2ZSIsImF2YXRhcl91cmwiOiJodHRwczovL3NlY3VyZS5ncmF2YXRhci5jb20vYXZhdGFyLzEyNzMyZTkzOTQ5YjA0NTBmZjk4N2FlMmQ0MDlhMjYxP3M9ODBcdTAwMjZkPWlkZW50aWNvbiIsIndlYl91cmwiOiJodHRwczovL2dpdGxhYi5jb20vZWhhbGUiLCJhY2Nlc3NfbGV2ZWwiOjEwLCJleHBpcmVzX2F0IjpudWxsfV0=
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:39 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=stoe
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:40 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '224'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"48644328baf74cf4b01ebc80f6c4b92e"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=stoe>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=stoe>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 2dc8fcf3-2c1a-48b2-a784-eabbb3961dd7
+      X-Runtime:
+      - '0.079893'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '4'
+      Ratelimit-Remaining:
+      - '596'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjE1MDUzNDAsIm5hbWUiOiJTdGVmYW4gU3TDtmx6bGUgKHN0b2UpIiwidXNlcm5hbWUiOiJzdG9lIiwic3RhdGUiOiJhY3RpdmUiLCJhdmF0YXJfdXJsIjoiaHR0cHM6Ly9zZWN1cmUuZ3JhdmF0YXIuY29tL2F2YXRhci9iZTkwN2EwYjVhYzg5OGNhMGY2OTAxN2U3YTZjMzAwNT9zPTgwXHUwMDI2ZD1pZGVudGljb24iLCJ3ZWJfdXJsIjoiaHR0cHM6Ly9naXRsYWIuY29tL3N0b2UifV0=
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:40 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=synthead
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:42 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '220'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"6242edc81758cc8e7ea398ed898de8da"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=synthead>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=synthead>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - ae80bc37-3b66-4648-be70-1cee14966dc8
+      X-Runtime:
+      - '0.054699'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '5'
+      Ratelimit-Remaining:
+      - '595'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1477621,"name":"Maxwell Pray","username":"synthead","state":"active","avatar_url":"https://gl-static.global.ssl.fastly.net/uploads/-/system/user/avatar/1477621/avatar.png","web_url":"https://gitlab.com/synthead"}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:42 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=jkjewett
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:44 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '220'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"26f4e0b7053a185e1514c2985b65fbe0"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=jkjewett>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=jkjewett>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 4125b3bf-538d-48b1-a3a4-9773476d5af7
+      X-Runtime:
+      - '0.077616'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '6'
+      Ratelimit-Remaining:
+      - '594'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1474011,"name":"Jeff Jewtt","username":"jkjewett","state":"active","avatar_url":"https://secure.gravatar.com/avatar/a6df7faef903e68cc2fbbb03195e5eb4?s=80\u0026d=identicon","web_url":"https://gitlab.com/jkjewett"}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:44 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=colossus9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '224'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"b293e07d9a29229b6f37058d5de27a63"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=colossus9>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=colossus9>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 73d16a63-148f-48e7-bc34-2423b4b5450c
+      X-Runtime:
+      - '0.057286'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '7'
+      Ratelimit-Remaining:
+      - '593'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1292088,"name":"James Garcia","username":"colossus9","state":"active","avatar_url":"https://secure.gravatar.com/avatar/1b174a060796c583b11a1fbaf1a0f9af?s=80\u0026d=identicon","web_url":"https://gitlab.com/colossus9"}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:45 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=mattcantstop
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '221'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"a52d4e30572a3f18125da87c2c348b39"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=mattcantstop>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=mattcantstop>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - e3ef2269-839f-4f1f-b0e1-d4a0c32feadc
+      X-Runtime:
+      - '0.101456'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '8'
+      Ratelimit-Remaining:
+      - '592'
+    body:
+      encoding: UTF-8
+      string: '[{"id":417001,"name":"Matt","username":"mattcantstop","state":"active","avatar_url":"https://secure.gravatar.com/avatar/9c1fb6cb9d54ce36a84cca0aa4567ea3?s=80\u0026d=identicon","web_url":"https://gitlab.com/mattcantstop"}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:46 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=dpmex4527
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '224'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"5b72d074cca58608f8e84eeadc4fb8ef"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=dpmex4527>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=dpmex4527>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - b87a1ce2-5086-46b3-8001-4838c5a7430a
+      X-Runtime:
+      - '0.082347'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '9'
+      Ratelimit-Remaining:
+      - '591'
+    body:
+      encoding: UTF-8
+      string: '[{"id":1238984,"name":"Daniel Perez","username":"dpmex4527","state":"active","avatar_url":"https://secure.gravatar.com/avatar/47338cb6ea1c84bfd0bbafd6a1298f3d?s=80\u0026d=identicon","web_url":"https://gitlab.com/dpmex4527"}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:49 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=kylemacey
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '221'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"07b7f2eebcac7003590f7a9fefadbe15"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=kylemacey>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=kylemacey>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - e2ae876b-a43e-42dc-9ce4-15832ba465ce
+      X-Runtime:
+      - '0.069776'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '10'
+      Ratelimit-Remaining:
+      - '590'
+    body:
+      encoding: UTF-8
+      string: '[{"id":414903,"name":"Kyle Macey","username":"kylemacey","state":"active","avatar_url":"https://secure.gravatar.com/avatar/e7bc3ce1dbb0fcaa9bb00bf10628526e?s=80\u0026d=identicon","web_url":"https://gitlab.com/kylemacey"}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:50 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=spraints
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '213'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d7e84c4321a9ce5072111df5c871bc1b"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=spraints>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=spraints>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 10b4656a-3987-4b42-ac7e-33b40632c6a1
+      X-Runtime:
+      - '0.070937'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '11'
+      Ratelimit-Remaining:
+      - '589'
+    body:
+      encoding: UTF-8
+      string: '[{"id":142189,"name":"Matt","username":"spraints","state":"active","avatar_url":"https://secure.gravatar.com/avatar/0bf208eebdab7c5d16152f70a1ee837f?s=80\u0026d=identicon","web_url":"https://gitlab.com/spraints"}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:51 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=jonmagic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:52 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '218'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"cdfb99627070d049b76bcc40d5fb43ad"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=jonmagic>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=jonmagic>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 0f77c270-35c5-4b01-87eb-cd96d185fed6
+      X-Runtime:
+      - '0.093670'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '12'
+      Ratelimit-Remaining:
+      - '588'
+    body:
+      encoding: UTF-8
+      string: '[{"id":529946,"name":"Jon Magic","username":"jonmagic","state":"active","avatar_url":"https://secure.gravatar.com/avatar/7064ad438246a02809c85bcd92cb5f3f?s=80\u0026d=identicon","web_url":"https://gitlab.com/jonmagic"}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:52 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=lizzhale
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:53 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '213'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"521d06a7b6d47256c8e3a4d4238f959f"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=lizzhale>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=lizzhale>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - e0b79420-e860-42f2-beaa-be56ae3617e5
+      X-Runtime:
+      - '0.112730'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '13'
+      Ratelimit-Remaining:
+      - '587'
+    body:
+      encoding: UTF-8
+      string: '[{"id":529949,"name":"Lizz","username":"lizzhale","state":"active","avatar_url":"https://secure.gravatar.com/avatar/d36cdb93d0f85b5d7b76a183834d4350?s=80\u0026d=identicon","web_url":"https://gitlab.com/lizzhale"}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:53 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/users?username=ehale
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:54 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '211'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"a17042596af3c5732e38204ae65efb16"
+      Link:
+      - <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=ehale>;
+        rel="first", <https://gitlab.com/api/v3/users?active=false&blocked=false&external=false&page=1&per_page=20&skip_ldap=false&username=ehale>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - c892de70-05e3-4d4f-a80b-5783b9c3bdd2
+      X-Runtime:
+      - '0.087346'
+      X-Total:
+      - '1'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '14'
+      Ratelimit-Remaining:
+      - '586'
+    body:
+      encoding: UTF-8
+      string: '[{"id":47125,"name":"Lizz Hale","username":"ehale","state":"active","avatar_url":"https://secure.gravatar.com/avatar/12732e93949b0450ff987ae2d409a261?s=80\u0026d=identicon","web_url":"https://gitlab.com/ehale"}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:54 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v3/projects/1169162/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Private-Token:
+      - "<API_TOKEN>"
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Sep 2017 14:47:55 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '581'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"75557d719b552ab571d8127a58023930"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 55fc2d7f-3b39-4ba4-b5d7-13b4f7f0265d
+      X-Runtime:
+      - '0.681138'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '15'
+      Ratelimit-Remaining:
+      - '585'
+    body:
+      encoding: UTF-8
+      string: '[{"id":248628,"name":"Blocker","color":"#a295d6","description":"I''m
+        currently blocked, please send help.","open_issues_count":1,"closed_issues_count":0,"open_merge_requests_count":1,"priority":null,"subscribed":false},{"id":248627,"name":"Bug","color":"#ff0000","description":"","open_issues_count":1,"closed_issues_count":0,"open_merge_requests_count":0,"priority":null,"subscribed":false},{"id":252887,"name":"Don''t
+        Drink and Code","color":"#ad8d43","description":"","open_issues_count":0,"closed_issues_count":0,"open_merge_requests_count":1,"priority":null,"subscribed":false}]'
+    http_version: 
+  recorded_at: Thu, 21 Sep 2017 14:47:56 GMT
+recorded_with: VCR 3.0.3
