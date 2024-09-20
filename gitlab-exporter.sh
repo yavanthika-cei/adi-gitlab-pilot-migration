@@ -30,8 +30,18 @@ else
   echo "Exporter already extracted."
 fi
 
-# Run the exporter tool
-cd "$EXPORTER_DIR"
-./gl-exporter --project "$NAMESPACE/$PROJECT_NAME" --token "$GITLAB_TOKEN"
+# Build the Docker image from the Dockerfile
+echo "Building Docker image for gl-exporter..."
+docker build -t gl-exporter:1.7.1 "$EXPORTER_DIR"
+
+# Run the exporter tool in Docker
+echo "Running GitLab exporter..."
+docker run --rm \
+  -e GITLAB_TOKEN="$GITLAB_TOKEN" \
+  -e PROJECT_NAME="$PROJECT_NAME" \
+  -e NAMESPACE="$NAMESPACE" \
+  -v "$(pwd)/output:/output" \
+  gl-exporter:1.7.1 \
+  ./gl-exporter --namespace "$NAMESPACE" --project "$PROJECT_NAME" -o /output/migration_archive.tar.gz
 
 echo "Export completed."
