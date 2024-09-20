@@ -3,9 +3,10 @@
 # Exit on error
 set -e
 
-# Check if necessary environment variables are set
-if [[ -z "$GITLAB_TOKEN" || -z "$PROJECT_NAME" || -z "$NAMESPACE" ]]; then
-  echo "Error: Missing environment variables."
+# Check if the input CSV file exists
+CSV_FILE="export_list.csv"
+if [[ ! -f "$CSV_FILE" ]]; then
+  echo "Error: CSV file '$CSV_FILE' does not exist."
   exit 1
 fi
 
@@ -23,10 +24,8 @@ echo "Building Docker image for gl-exporter..."
 cd "$EXPORTER_DIR"
 docker build -t gl-exporter:1.7.1 .
 
-# Run the exporter tool
-echo "Running GitLab exporter..."
-echo "Running command: docker run --rm -e GITLAB_API_ENDPOINT='$GITLAB_API_ENDPOINT' -e GITLAB_USERNAME='$GITLAB_USERNAME' -e GITLAB_API_PRIVATE_TOKEN='$GITLAB_API_PRIVATE_TOKEN' -e GITLAB_TOKEN='$GITLAB_TOKEN' -v '$PWD/../output:/output' -w /gl-exporter/exe gl-exporter:1.7.1 ./gl_exporter --namespace '$NAMESPACE' --project '$PROJECT_NAME' -o /output/migration_archive.tar.gz"
-
+# Run the exporter tool using the CSV file
+echo "Exporting projects listed in '$CSV_FILE'..."
 docker run --rm \
   -e GITLAB_API_ENDPOINT="$GITLAB_API_ENDPOINT" \
   -e GITLAB_USERNAME="$GITLAB_USERNAME" \
@@ -35,6 +34,6 @@ docker run --rm \
   -v "$PWD/../output:/output" \
   -w /gl-exporter/exe \
   gl-exporter:1.7.1 \
-  ./gl_exporter --namespace "$NAMESPACE" --project "$PROJECT_NAME" -o /output/migration_archive.tar.gz
+  ./gl_exporter -f /output/"$CSV_FILE" -o /output/migration_archive.tar.gz
 
 echo "Export completed. Archive stored in ./output/migration_archive.tar.gz."
