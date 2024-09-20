@@ -6,29 +6,22 @@ on:
 jobs:
   export:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Build Docker image for gl-exporter
+      - name: Set up GitLab variables
         run: |
-          docker build -t gl-exporter:1.7.1 ./gl-exporter-1.7.1
-      - name: Set up GitLab issue hardcoding values
-        run: | 
           echo "GITLAB_TOKEN=${{ secrets.GITLAB_TOKEN }}" >> $GITHUB_ENV
           echo "PROJECT_NAME=adi-pilot-migration" >> $GITHUB_ENV
-          echo "NAMESPACE= avanthika127" >> $GITHUB_ENV
-        
-      - name: Run GitLab exporter in Docker
-        run: |
-          docker run --rm \
-            -e GITLAB_API_ENDPOINT=${{ secrets.GITLAB_API_ENDPOINT }} \
-            -e GITLAB_USERNAME=${{ secrets.GITLAB_USERNAME }} \
-            -e GITLAB_TOKEN=${{ secrets.GITLAB_TOKEN }} \
-            -v ${{ github.workspace }}/output:/output \
-            gl-exporter:1.7.1 \
-            ./gl_exporter --namespace ${{ secrets.GITLAB_NAMESPACE }} --project ${{ secrets.GITLAB_PROJECT }} -o /output/migration_archive.tar.gz
+          echo "NAMESPACE=avanthika127" >> $GITHUB_ENV
+
+      - name: Make migration script executable
+        run: chmod +x gitlab-exporter.sh
+
+      - name: Run GitLab exporter script
+        run: ./gitlab-exporter.sh
 
       - name: Upload Exported Archive
         uses: actions/upload-artifact@v3
