@@ -31,8 +31,8 @@ else
 fi
 
 # List contents of the extracted directory for debugging
-echo "Listing contents of the extracted exporter directory:"
-ls -al "$EXPORTER_DIR"
+# echo "Listing contents of the extracted exporter directory:"
+# ls -al "$EXPORTER_DIR"
 
 # Build Docker image
 echo "Building Docker image for gl-exporter..."
@@ -40,8 +40,8 @@ cd "$EXPORTER_DIR"
 docker build -t gl-exporter:1.7.1 .
 
 # List contents of /exe directory to check if the executable is present
-echo "Checking the /exe directory contents:"
-ls -al ./exe
+# echo "Checking the /exe directory contents:"
+# ls -al ./exe
 
 # Run the exporter tool
 echo "Running GitLab exporter..."
@@ -50,8 +50,8 @@ docker run --rm \
   -e GITLAB_USERNAME="$GITLAB_USERNAME" \
   -e GITLAB_TOKEN="$GITLAB_TOKEN" \
   -v "$PWD/output:/output" \
-  -w /gl-exporter-1.7.1 \
+  -w /gl-exporter/exe \
   gl-exporter:1.7.1 \
-  ./exe/gl_exporter --namespace "$NAMESPACE" --project "$PROJECT_NAME" -o /output/migration_archive.tar.gz
+  ./gl_exporter --namespace "avanthika127" --project "adi-pilot-migration" -o /output/migration_archive.tar.gz
 
 echo "Export completed. Archive stored in ./output/migration_archive.tar.gz."
