@@ -4,7 +4,7 @@
 set -e
 
 # Check if the input CSV file exists
-CSV_FILE="export_list.csv"
+CSV_FILE="output/export_list.csv"
 if [[ ! -f "$CSV_FILE" ]]; then
   echo "Error: CSV file '$CSV_FILE' does not exist."
   exit 1
@@ -34,6 +34,6 @@ docker run --rm \
   -v "$PWD/../output:/output" \
   -w /gl-exporter/exe \
   gl-exporter:1.7.1 \
-  ./gl_exporter -f /output/"$CSV_FILE" -o /output/migration_archive.tar.gz
+  ./gl_exporter -f /output/export_list.csv -o /output/migration_archive.tar.gz
 
 echo "Export completed. Archive stored in ./output/migration_archive.tar.gz."
