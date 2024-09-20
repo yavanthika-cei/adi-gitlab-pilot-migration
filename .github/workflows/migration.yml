@@ -1,0 +1,48 @@
+name: Export GitLab Repos
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+
+jobs:
+  export-repos:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # - name: Get issue details
+    #   id: issue
+    #   uses: actions/github-script@v6
+    #   with:
+    #     script: |
+    #       const issue = context.issue;
+    #       const issueDetails = await github.rest.issues.get({
+    #         owner: context.repo.owner,
+    #         repo: context.repo.repo,
+    #         issue_number: issue.number
+    #       });
+    #       return issueDetails.data.body;
+
+    # - name: Extract project details
+    #   id: extract
+    #   run: |
+    #     echo "Issue body: ${{ steps.issue.outputs.result }}"
+    #     # Extract project name and namespace from issue body
+    #     project_details=$(echo "${{ steps.issue.outputs.result }}" | grep -oP 'Project: \K.*' | tr -d '\n')
+    #     IFS=',' read -r project_name namespace <<< "$project_details"
+    #     echo "PROJECT_NAME=${project_name}" >> $GITHUB_ENV
+    #     echo "NAMESPACE=${namespace}" >> $GITHUB_ENV
+
+    - name: Set up GitLab token
+      run: | 
+        echo "GITLAB_TOKEN=${{ secrets.GITLAB_TOKEN }}" >> $GITHUB_ENV
+        echo "PROJECT_NAME=adi-pilot-migration" >> $GITHUB_ENV
+        echo "NAMESPACE= avanthika127" >> $GITHUB_ENV
+
+    - name: Run migration script
+      run: |
+        chmod +x ./scripts/gitlab-exporter.sh
+        ./scripts/gitlab-exporter.sh
