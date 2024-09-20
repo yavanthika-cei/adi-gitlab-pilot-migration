@@ -3,13 +3,12 @@ name: Export GitLab Repos
 on:
   workflow_dispatch:
   issues:
-    types:
-      - opened
-      - edited
-      - reopened
+    types: [opened]
+
 jobs:
   export:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -27,6 +26,16 @@ jobs:
       - name: Make output directory
         run: mkdir -p output
 
+      - name: Move CSV to output directory
+        run: mv export_list.csv output/
+
+      # Add a debug step to verify that the CSV file exists in the correct path
+      - name: Verify CSV creation
+        run: |
+          echo "Checking if CSV file exists in output/ directory:"
+          ls -la output/
+          cat output/export_list.csv
+
       - name: Set up GitLab variables
         run: |
           echo "GITLAB_TOKEN=${{ secrets.GITLAB_TOKEN }}" >> $GITHUB_ENV
@@ -39,7 +48,7 @@ jobs:
 
       - name: Run GitLab exporter script
         run: ./gitlab-exporter.sh
-        
+
       - name: List Output Directory
         run: ls -la output
 
