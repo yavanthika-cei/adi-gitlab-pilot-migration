@@ -9,46 +9,19 @@ if [[ -z "$GITLAB_TOKEN" || -z "$PROJECT_NAME" || -z "$NAMESPACE" ]]; then
   exit 1
 fi
 
-
-# cd ./gl-exporter-1.7.1
-# ls -lt
-# chmod +x ./script/bootstrap
-# ./script/bootstrap
-# gl-exporter --version
-
-#Define variables
-EXPORTER_TAR_URL="https://github.com/yavanthika-cei/adi-gitlab-pilot-migration/raw/main/gl-exporter-1.7.1.tar.gz"
-EXPORTER_TAR_FILE="gl-exporter.tar.gz"
+# Define variables
 EXPORTER_DIR="gl-exporter-1.7.1"
 
-# Download the .tar.gz file from GitHub if it doesn't exist
-if [[ ! -f "$EXPORTER_TAR_FILE" ]]; then
-  echo "Downloading gl-exporter from $EXPORTER_TAR_URL..."
-  curl -L -o "$EXPORTER_TAR_FILE" "$EXPORTER_TAR_URL"
-else
-  echo "Exporter already downloaded."
-fi
-
-# Extract the .tar.gz file
+# Check if the gl-exporter directory exists
 if [[ ! -d "$EXPORTER_DIR" ]]; then
-  echo "Extracting the gl-exporter..."
-  tar -xvzf "$EXPORTER_TAR_FILE"
-else
-  echo "Exporter already extracted."
+  echo "Error: Directory $EXPORTER_DIR does not exist."
+  exit 1
 fi
-
-# List contents of the extracted directory for debugging
-# echo "Listing contents of the extracted exporter directory:"
-# ls -al "$EXPORTER_DIR"
 
 # Build Docker image
 echo "Building Docker image for gl-exporter..."
 cd "$EXPORTER_DIR"
 docker build -t gl-exporter:1.7.1 .
-
-# List contents of /exe directory to check if the executable is present
-# echo "Checking the /exe directory contents:"
-# ls -al ./exe
 
 # Run the exporter tool
 echo "Running GitLab exporter..."
@@ -57,9 +30,9 @@ docker run --rm \
   -e GITLAB_USERNAME="$GITLAB_USERNAME" \
   -e GITLAB_API_PRIVATE_TOKEN="$GITLAB_API_PRIVATE_TOKEN" \
   -e GITLAB_TOKEN="$GITLAB_TOKEN" \
-  -v "$PWD/output:/output" \
+  -v "$PWD/../output:/output" \  # Ensure to go back one directory to access output
   -w /gl-exporter/exe \
   gl-exporter:1.7.1 \
-  ./gl_exporter --namespace "avanthika127" --project "adi-pilot-migration" -o /output/migration_archive.tar.gz
+  ./gl_exporter --namespace "$NAMESPACE" --project "$PROJECT_NAME" -o /output/migration_archive.tar.gz
 
 echo "Export completed. Archive stored in ./output/migration_archive.tar.gz."
