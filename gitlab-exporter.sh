@@ -25,6 +25,7 @@ docker build -t gl-exporter:1.7.1 .
 
 # Run the exporter tool
 echo "Running GitLab exporter..."
+echo "Running command: docker run ... (complete command here)"
 docker run --rm \
   -e GITLAB_API_ENDPOINT="$GITLAB_API_ENDPOINT" \
   -e GITLAB_USERNAME="$GITLAB_USERNAME" \
