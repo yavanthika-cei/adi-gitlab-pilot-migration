@@ -3,10 +3,7 @@ name: Export GitLab Repos
 on:
   workflow_dispatch:
   issues:
-    types:
-      - opened
-      - edited
-      - reopened
+    types: [opened]
 
 jobs:
   export:
@@ -21,11 +18,8 @@ jobs:
         run: |
           echo "Extracting project names and namespaces from issue..."
           echo "${{ github.event.issue.body }}" > issue_body.txt
-          
-          # Extract each line as namespace and project name from issue_body.txt
-          # Expecting each line to be in format: <namespace>,<project>
-          awk -F',' '{print $1 "," $2}' issue_body.txt > export_list.csv
-
+          # Extract comma-separated values from the issue body and sanitize any newlines or problematic characters
+          cat issue_body.txt | grep -oP '[^,]*,[^,]*' | tr '\n' ',' > export_list.csv
           echo "Generated export_list.csv with the following contents:"
           cat export_list.csv
 
@@ -35,10 +29,9 @@ jobs:
       - name: Move CSV to output directory
         run: mv export_list.csv output/
 
-      - name: Verify CSV creation
+      - name: Verify CSV file contents
         run: |
-          echo "Checking if CSV file exists in output/ directory:"
-          ls -la output/
+          echo "Checking contents of output/export_list.csv:"
           cat output/export_list.csv
 
       - name: Set up GitLab variables
