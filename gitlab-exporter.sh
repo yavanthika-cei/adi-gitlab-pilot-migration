@@ -43,6 +43,6 @@ docker run --rm \
   -e GITLAB_TOKEN="$GITLAB_TOKEN" \
   -v "$PWD/output:/output" \
   gl-exporter:1.7.1 \
-  ./gl-exporter --namespace "$NAMESPACE" --project "$PROJECT_NAME" -o /output/migration_archive.tar.gz
+  ./exe/gl-exporter --namespace "$NAMESPACE" --project "$PROJECT_NAME" -o /output/migration_archive.tar.gz
 
 echo "Export completed. Archive stored in ./output/migration_archive.tar.gz."
