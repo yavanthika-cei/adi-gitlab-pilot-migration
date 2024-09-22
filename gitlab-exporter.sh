@@ -24,20 +24,25 @@ echo "Building Docker image for gl-exporter..."
 cd "$EXPORTER_DIR"
 docker build -t gl-exporter:1.7.1 .
 
-# Loop through each line in the CSV file
-echo "Exporting projects listed in '$CSV_FILE'..."
-while IFS=',' read -r namespace project_name; do
-  echo "Exporting $namespace/$project_name..."
-  
-  docker run --rm \
-    -e GITLAB_API_ENDPOINT="$GITLAB_API_ENDPOINT" \
-    -e GITLAB_USERNAME="$GITLAB_USERNAME" \
-    -e GITLAB_API_PRIVATE_TOKEN="$GITLAB_API_PRIVATE_TOKEN" \
-    -e GITLAB_TOKEN="$GITLAB_TOKEN" \
-    -v "$PWD/../output:/output" \
-    -w /gl-exporter/exe \
-    gl-exporter:1.7.1 \
-    ./gl_exporter -n "$namespace" -p "$project_name" -o /output/"${namespace}_${project_name}_archive.tar.gz"
-done < "$CSV_FILE"
+# Debug: Check if output directory exists and list files
+if [[ -d "$PWD/../output" ]]; then
+  echo "Output directory found:"
+  ls -la "$PWD/../output"
+else
+  echo "Output directory not found, creating..."
+  mkdir -p "$PWD/../output"
+fi
 
-echo "Export completed. Archives stored in the ./output/ directory."
+# Run the exporter tool using the CSV file
+echo "Exporting projects listed in '$CSV_FILE'..."
+docker run --rm \
+  -e GITLAB_API_ENDPOINT="$GITLAB_API_ENDPOINT" \
+  -e GITLAB_USERNAME="$GITLAB_USERNAME" \
+  -e GITLAB_API_PRIVATE_TOKEN="$GITLAB_API_PRIVATE_TOKEN" \
+  -e GITLAB_TOKEN="$GITLAB_TOKEN" \
+  -v "$PWD/../output:/output" \
+  -w /gl-exporter/exe \
+  gl-exporter:1.7.1 \
+  ./gl_exporter -f /output/export_list.csv -o /output/migration_archive.tar.gz
+
+echo "Export completed. Archive stored in ./output/migration_archive.tar.gz."
