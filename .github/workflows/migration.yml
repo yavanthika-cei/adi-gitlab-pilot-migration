@@ -22,6 +22,10 @@ jobs:
           echo "Extracting project names and namespaces from issue..."
           echo "${{ github.event.issue.body }}" > issue_body.txt
 
+          # Debug: Check the issue body
+          echo "Issue body content:"
+          cat issue_body.txt
+
           # Sanitize and format the issue body
           sed -i 's/\r//g' issue_body.txt  # Remove carriage return if present
           sed -i 's/, /,/g' issue_body.txt  # Remove spaces after commas
@@ -30,24 +34,31 @@ jobs:
           # Extract comma-separated values from the sanitized issue body
           grep -oP '[^,]+,[^,]+' issue_body.txt > export_list.csv
 
-          echo "Generated export_list.csv with the following contents:"
+          # Debug: Check the generated export_list.csv
+          echo "Generated export_list.csv:"
           cat export_list.csv
 
       - name: Make output directory
         run: mkdir -p output
 
       - name: Move CSV to output directory
-        run: mv export_list.csv output/
+        run: |
+          echo "Moving export_list.csv to output directory..."
+          mv export_list.csv output/
+
+          # Debug: Verify the file is in the output directory
+          if [[ -f output/export_list.csv ]]; then
+            echo "export_list.csv moved successfully."
+            ls -la output/
+          else
+            echo "Error: export_list.csv not found in output directory."
+            exit 1
+          fi
 
       - name: Verify CSV file contents
         run: |
-          if [[ ! -f output/export_list.csv ]]; then
-            echo "Error: CSV file 'output/export_list.csv' not found."
-            exit 1
-          else
-            echo "CSV file found:"
-            cat output/export_list.csv
-          fi
+          echo "Checking contents of output/export_list.csv:"
+          cat output/export_list.csv
 
       - name: Set up GitLab variables
         run: |
