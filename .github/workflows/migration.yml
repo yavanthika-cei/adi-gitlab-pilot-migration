@@ -26,12 +26,20 @@ jobs:
           echo "Issue body content:"
           cat issue_body.txt
 
-          # Process and extract the list
-          grep -oP '[^,]+,[^,]+' issue_body.txt > export_list.csv
+          # Process and extract the list, ensuring CSV is properly formatted
+          grep -oP '[^,]+,[^,]+' issue_body.txt | while read -r line; do
+            # Escape any commas or newlines in the fields
+            if [[ "$line" == *","* ]] || [[ "$line" == *$'\n'* ]]; then
+              echo "\"$line\"" >> export_list.csv
+            else
+              echo "$line" >> export_list.csv
+            fi
+          done
 
           # Debug: Check the generated export_list.csv
           echo "Generated export_list.csv:"
           cat export_list.csv
+
 
       - name: Make output directory
         run: mkdir -p output
