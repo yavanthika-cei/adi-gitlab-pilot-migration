@@ -22,7 +22,7 @@ jobs:
           echo "Extracting project names and namespaces from issue..."
           echo "${{ github.event.issue.body }}" > issue_body.txt
 
-          # Sanitize and format the issue body: convert newlines or multiple spaces to single space, remove extra chars
+          # Sanitize and format the issue body
           sed -i 's/\r//g' issue_body.txt  # Remove carriage return if present
           sed -i 's/, /,/g' issue_body.txt  # Remove spaces after commas
           sed -i 's/\s\+/\n/g' issue_body.txt  # Convert spaces between lines to newline
@@ -41,8 +41,13 @@ jobs:
 
       - name: Verify CSV file contents
         run: |
-          echo "Checking contents of output/export_list.csv:"
-          cat output/export_list.csv
+          if [[ ! -f output/export_list.csv ]]; then
+            echo "Error: CSV file 'output/export_list.csv' not found."
+            exit 1
+          else
+            echo "CSV file found:"
+            cat output/export_list.csv
+          fi
 
       - name: Set up GitLab variables
         run: |
