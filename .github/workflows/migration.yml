@@ -28,7 +28,8 @@ jobs:
 
           # Process and extract the list, ensuring CSV is properly formatted
           grep -oP '[^,]+,[^,]+' issue_body.txt | while read -r line; do
-            # Escape any commas or newlines in the fields
+            # Trim leading/trailing spaces and escape any newlines in the fields
+            line=$(echo "$line" | tr -d '\r\n')
             if [[ "$line" == *","* ]]; then
               echo "\"$line\"" >> export_list.csv
             else
