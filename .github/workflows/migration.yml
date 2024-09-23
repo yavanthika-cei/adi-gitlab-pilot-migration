@@ -21,9 +21,24 @@ jobs:
         run: |
           echo "Extracting project names and namespaces from issue..."
           echo "${{ github.event.issue.body }}" > issue_body.txt
-          # Extract comma-separated values from the issue body and sanitize any newlines or problematic characters
-          cat issue_body.txt | grep -oP '[^,]*,[^,]*' | tr '\n' ',' > export_list.csv
-          echo "Generated export_list.csv with the following contents:"
+
+          # Debug: Check the issue body content
+          echo "Issue body content:"
+          cat issue_body.txt
+
+          # Process and extract the list, removing unnecessary slashes/commas
+          grep -oP '[^,]+,[^,]+' issue_body.txt | while read -r line; do
+            # Remove trailing slashes and newlines
+            line=$(echo "$line" | sed 's,/*$,,g' | tr -d '\r\n')
+            if [[ "$line" == *","* ]]; then
+              echo "\"$line\"" >> export_list.csv
+            else
+              echo "$line" >> export_list.csv
+            fi
+          done
+
+          # Debug: Check the generated export_list.csv
+          echo "Generated export_list.csv:"
           cat export_list.csv
 
       - name: Make output directory
