@@ -39,6 +39,7 @@ jobs:
           # Debug: Check the generated export_list.csv
           echo "Generated export_list.csv:"
           cat export_list.csv
+          cat -n output/export_list.csv
 
       - name: Make output directory
         run: mkdir -p output
