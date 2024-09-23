@@ -40,7 +40,6 @@ jobs:
           echo "Generated export_list.csv:"
           cat export_list.csv
 
-
       - name: Make output directory
         run: mkdir -p output
 
