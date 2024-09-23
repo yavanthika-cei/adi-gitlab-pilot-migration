@@ -39,7 +39,6 @@ jobs:
           # Debug: Check the generated export_list.csv
           echo "Generated export_list.csv:"
           cat export_list.csv
-          cat -n output/export_list.csv
 
       - name: Make output directory
         run: mkdir -p output
@@ -56,6 +55,11 @@ jobs:
             echo "Error: export_list.csv not found in output directory."
             exit 1
           fi
+
+      - name: List contents of export_list.csv with line numbers
+        run: |
+          echo "Displaying export_list.csv with line numbers:"
+          cat -n output/export_list.csv
 
       - name: Set up GitLab variables
         run: |
@@ -78,4 +82,3 @@ jobs:
         with:
           name: migration_archive
           path: output/migration_archive.tar.gz
-
