@@ -33,24 +33,16 @@ else
   mkdir -p "$PWD/../output"
 fi
 
-# Process CSV file and handle errors
-echo "Processing CSV file '$CSV_FILE'..."
-while IFS=',' read -r namespace project_name; do
-  if [[ -z "$namespace" || -z "$project_name" ]]; then
-    echo "Skipping invalid entry: '$namespace','$project_name'"
-    continue
-  fi
+# Run the exporter tool using the CSV file
+echo "Exporting projects listed in '$CSV_FILE'..."
+docker run --rm \
+  -e GITLAB_API_ENDPOINT="$GITLAB_API_ENDPOINT" \
+  -e GITLAB_USERNAME="$GITLAB_USERNAME" \
+  -e GITLAB_API_PRIVATE_TOKEN="$GITLAB_API_PRIVATE_TOKEN" \
+  -e GITLAB_TOKEN="$GITLAB_TOKEN" \
+  -v "$PWD/../output:/output" \
+  -w /gl-exporter/exe \
+  gl-exporter:1.7.1 \
+  ./gl_exporter -f /output/export_list.csv -o /output/migration_archive.tar.gz
 
-  echo "Exporting project: Namespace='$namespace', Project='$project_name'"
-  docker run --rm \
-    -e GITLAB_API_ENDPOINT="$GITLAB_API_ENDPOINT" \
-    -e GITLAB_USERNAME="$GITLAB_USERNAME" \
-    -e GITLAB_API_PRIVATE_TOKEN="$GITLAB_API_PRIVATE_TOKEN" \
-    -e GITLAB_TOKEN="$GITLAB_TOKEN" \
-    -v "$PWD/../output:/output" \
-    -w /gl-exporter/exe \
-    gl-exporter:1.7.1 \
-    ./gl_exporter -n "$namespace" -p "$project_name" -o "/output/$project_name-migration_archive.tar.gz"
-done < "$CSV_FILE"
-
-echo "Export completed. Check the output directory for the exported archives."
+echo "Export completed. Archive stored in ./output/migration_archive.tar.gz."
