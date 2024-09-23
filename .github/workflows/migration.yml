@@ -31,9 +31,7 @@ jobs:
             # Remove trailing slashes and newlines
             line=$(echo "$line" | sed 's,/*$,,g' | tr -d '\r\n')
             if [[ "$line" == *","* ]]; then
-              echo "\"$line\"" >> export_list.csv
-            else
-              echo "$line" >> export_list.csv
+              echo "$line" >> export_list.csv 
             fi
           done
 
