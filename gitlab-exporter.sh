@@ -11,7 +11,7 @@ if [[ ! -f "$CSV_FILE" ]]; then
 fi
 
 # Define variables
-EXPORTER_DIR="gl-exporter-1.7.1"
+EXPORTER_DIR="gl-exporter-release-1-7-3"
 
 # Check if the gl-exporter directory exists
 if [[ ! -d "$EXPORTER_DIR" ]]; then
@@ -22,7 +22,7 @@ fi
 # Build Docker image
 echo "Building Docker image for gl-exporter..."
 cd "$EXPORTER_DIR"
-docker build -t gl-exporter:1.7.1 .
+docker build -t gl-exporter:1.7.3 .
 
 # Debug: Check if output directory exists and list files
 if [[ -d "$PWD/../output" ]]; then
@@ -42,7 +42,7 @@ docker run --rm \
   -e GITLAB_TOKEN="$GITLAB_TOKEN" \
   -v "$PWD/../output:/output" \
   -w /gl-exporter/exe \
-  gl-exporter:1.7.1 \
+  gl-exporter:1.7.3 \
   ./gl_exporter -f /output/export_list.csv -o /output/migration_archive.tar.gz
 
 echo "Export completed. Archive stored in ./output/migration_archive.tar.gz."
