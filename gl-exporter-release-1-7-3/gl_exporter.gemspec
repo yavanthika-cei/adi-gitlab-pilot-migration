@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'faraday-http-cache', '~> 2.4.1'
   spec.add_dependency 'faraday_middleware', '~> 1.2.0'
   spec.add_dependency 'posix-spawn', '~> 0.3.15'
-  spec.add_dependency 'rugged', '~> 1.6.2'
+  spec.add_dependency 'rugged', '~> 1.7.2'
   spec.add_development_dependency 'addressable', '~> 2.8.1'
   spec.add_development_dependency 'bundler', '>=2.4.1'
   spec.add_development_dependency 'climate_control', '~> 1.2.0'

@@ -84,39 +84,19 @@ class GlExporter
   #   saved
   # @option options [String] :lock_projects if and how projects should be locked
   def export
-  set_ssl_options!
-  check_version!
-  @project_locker = ProjectLocker.new(options[:lock_projects])
-
-  if options[:namespace] && options[:project]
-    export_project(Gitlab.project(options[:namespace], options[:project]))
+    set_ssl_options!
+    check_version!
+    @project_locker = ProjectLocker.new(options[:lock_projects])
+    if options[:namespace] && options[:project]
+      export_project(Gitlab.project(options[:namespace], options[:project]))
+    end
+    if options[:manifest]
+      export_from_list(options[:manifest])
+    end
+    # @team_builder.write!
+    raise "Nothing was exported!" unless archiver.used?
+    archiver.create_tar(options[:output_path])
   end
-
-  if options[:manifest]
-    export_from_list(options[:manifest])
-  end
-
-  # Ensure team_builder is initialized and write data
-  if team_builder
-    team_builder.write!
-  else
-    output_logger.error "TeamBuilder initialization failed!"
-  end
-
-  raise "Nothing was exported!" unless archiver.used?
-  archiver.create_tar(options[:output_path])
-end
-
-def team_builder
-  @team_builder ||= begin
-    output_logger.info "Initializing TeamBuilder..."
-    TeamBuilder.new(current_export: self)
-  rescue => e
-    output_logger.error "Failed to initialize TeamBuilder: #{e.message}"
-    nil
-  end
-end
-
 
   def set_ssl_options!
     Gitlab.ssl_verify = options[:ssl_verify]

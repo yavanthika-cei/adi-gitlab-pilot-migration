@@ -76,6 +76,16 @@ class GlExporter
         expect(config.to_s).to_not match("exampleuser")
         expect(config.to_s).to_not match("examplepassword")
       end
+
+      it "clones bare" do
+        helper.archive_repo(
+          clone_url: "./spec/fixtures/Spoon-Knife",
+          to: "tmp/Spoon-Knife"
+        )
+
+        expect(Dir.exist?("tmp/Spoon-Knife/.git")).to be false
+        expect(File.exist?("tmp/Spoon-Knife/HEAD")).to be true
+      end
     end
 
     describe "#clone_certificate_check" do

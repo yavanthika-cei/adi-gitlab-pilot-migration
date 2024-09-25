@@ -6,7 +6,7 @@ GitLab Exporter was designed to export project information and meta data from in
 
 | Model | Can Export? | Notes |
 | :---  | :---------: | :---  |
-| Users | **Y** | |
+| Users | **Y** | Some attributes, such as email(s), are only available with administrator personal access tokens. See https://docs.gitlab.com/ee/api/users.html for details. |
 | Groups | **Y** | Imported as "Organizations" |
 | Group Members | **Y** | Imported as "Teams" |
 | Subgroups & Subgroup Projects | **Y** | Each group and subgroup is exported as an organization which is then mapped to a single target organization on import. |

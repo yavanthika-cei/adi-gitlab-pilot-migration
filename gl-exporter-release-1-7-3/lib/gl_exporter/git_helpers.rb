@@ -12,16 +12,7 @@ class GlExporter
     def archive_repo(clone_url:, to:, credentials: nil)
       # Kill the last attempt to export.
       FileUtils.rm_rf(to)
-
-      repository = Rugged::Repository.clone_at(clone_url, to,
-        credentials: credentials,
-        # Receiving nil will fall back to the default check
-        certificate_check: clone_certificate_check,
-        bare: true
-      )
-      setup_tracking_branches(repository)
-      fetch_all_refs(repository, credentials: credentials)
-      repository
+      clone_mirror(clone_url, to, credentials)
     end
 
     def change_wiki_head_ref(wiki)
@@ -42,25 +33,11 @@ class GlExporter
       repo.branches.any? { |b| b.name == branch }
     end
 
-    # Creates local tracking branches for a repository
-    # @param [Rugged::Repository] repository
-    #
-    def setup_tracking_branches(repository)
-      branch_collection = repository.branches
-      repository.branches.select(&:remote?).each do |branch|
-        local_branch_name = branch.name[/\Aorigin\/(.+)/, 1]
-        next if branch_collection[local_branch_name]
-        next if local_branch_name == "HEAD"
-        branch_collection.create(local_branch_name, branch.target.oid)
-      end
-    end
-
-    def fetch_all_refs(repository, credentials:)
-      repository.remotes.each do |remote|
-        remote.fetch("+refs/*:refs/*",
-          credentials: credentials,
-          certificate_check: clone_certificate_check,
-        )
+    def clone_mirror(clone_url, to, credentials)
+      Rugged::Repository.init_at(to, true).tap do |repository|
+        repository.remotes.create("origin", clone_url).tap do |remote|
+          remote.fetch("+refs/*:refs/*", credentials: credentials, certificate_check: clone_certificate_check)
+        end
       end
     end
 
