@@ -1,0 +1,21 @@
+name: Trigger Another Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      parameter1:
+        description: 'Input parameter 1'
+        required: true
+      parameter2:
+        description: 'Input parameter 2'
+        required: true
+
+jobs:
+  call-another-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Workflow from Another Repository
+        uses: yavanthika-cei/github-maven-app/.github/workflows/target-workflow.yml@main
+        with:
+          parameter1: ${{ github.event.inputs.parameter1 }}
+          parameter2: ${{ github.event.inputs.parameter2 }}
